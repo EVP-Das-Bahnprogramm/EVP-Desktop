@@ -76,7 +76,7 @@
             this.hilfeToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(982, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(982, 28);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -87,7 +87,7 @@
             this.programmBeendenToolStripMenuItem,
             this.einstellungenToolStripMenuItem});
             this.programmToolStripMenuItem.Name = "programmToolStripMenuItem";
-            this.programmToolStripMenuItem.Size = new System.Drawing.Size(93, 26);
+            this.programmToolStripMenuItem.Size = new System.Drawing.Size(93, 24);
             this.programmToolStripMenuItem.Text = "Programm";
             // 
             // überToolStripMenuItem
@@ -116,25 +116,25 @@
             // bildereintragToolStripMenuItem
             // 
             this.bildereintragToolStripMenuItem.Name = "bildereintragToolStripMenuItem";
-            this.bildereintragToolStripMenuItem.Size = new System.Drawing.Size(95, 26);
+            this.bildereintragToolStripMenuItem.Size = new System.Drawing.Size(95, 24);
             this.bildereintragToolStripMenuItem.Text = "Bearbeiten";
             // 
             // berToolStripMenuItem
             // 
             this.berToolStripMenuItem.Name = "berToolStripMenuItem";
-            this.berToolStripMenuItem.Size = new System.Drawing.Size(108, 26);
+            this.berToolStripMenuItem.Size = new System.Drawing.Size(108, 24);
             this.berToolStripMenuItem.Text = "Bildergalerie";
             // 
             // betriebstellenToolStripMenuItem
             // 
             this.betriebstellenToolStripMenuItem.Name = "betriebstellenToolStripMenuItem";
-            this.betriebstellenToolStripMenuItem.Size = new System.Drawing.Size(114, 26);
+            this.betriebstellenToolStripMenuItem.Size = new System.Drawing.Size(114, 24);
             this.betriebstellenToolStripMenuItem.Text = "Betriebstellen";
             // 
             // hilfeToolStripMenuItem
             // 
             this.hilfeToolStripMenuItem.Name = "hilfeToolStripMenuItem";
-            this.hilfeToolStripMenuItem.Size = new System.Drawing.Size(55, 26);
+            this.hilfeToolStripMenuItem.Size = new System.Drawing.Size(55, 24);
             this.hilfeToolStripMenuItem.Text = "Hilfe";
             // 
             // welcomeSign
