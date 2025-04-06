@@ -47,11 +47,12 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.button6 = new System.Windows.Forms.Button();
+            this.webView21 = new Microsoft.Web.WebView2.WinForms.WebView2();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.webView21)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -75,7 +76,7 @@
             this.hilfeToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(982, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(982, 30);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -86,7 +87,7 @@
             this.programmBeendenToolStripMenuItem,
             this.einstellungenToolStripMenuItem});
             this.programmToolStripMenuItem.Name = "programmToolStripMenuItem";
-            this.programmToolStripMenuItem.Size = new System.Drawing.Size(93, 24);
+            this.programmToolStripMenuItem.Size = new System.Drawing.Size(93, 26);
             this.programmToolStripMenuItem.Text = "Programm";
             // 
             // überToolStripMenuItem
@@ -115,25 +116,25 @@
             // bildereintragToolStripMenuItem
             // 
             this.bildereintragToolStripMenuItem.Name = "bildereintragToolStripMenuItem";
-            this.bildereintragToolStripMenuItem.Size = new System.Drawing.Size(95, 24);
+            this.bildereintragToolStripMenuItem.Size = new System.Drawing.Size(95, 26);
             this.bildereintragToolStripMenuItem.Text = "Bearbeiten";
             // 
             // berToolStripMenuItem
             // 
             this.berToolStripMenuItem.Name = "berToolStripMenuItem";
-            this.berToolStripMenuItem.Size = new System.Drawing.Size(108, 24);
+            this.berToolStripMenuItem.Size = new System.Drawing.Size(108, 26);
             this.berToolStripMenuItem.Text = "Bildergalerie";
             // 
             // betriebstellenToolStripMenuItem
             // 
             this.betriebstellenToolStripMenuItem.Name = "betriebstellenToolStripMenuItem";
-            this.betriebstellenToolStripMenuItem.Size = new System.Drawing.Size(114, 24);
+            this.betriebstellenToolStripMenuItem.Size = new System.Drawing.Size(114, 26);
             this.betriebstellenToolStripMenuItem.Text = "Betriebstellen";
             // 
             // hilfeToolStripMenuItem
             // 
             this.hilfeToolStripMenuItem.Name = "hilfeToolStripMenuItem";
-            this.hilfeToolStripMenuItem.Size = new System.Drawing.Size(55, 24);
+            this.hilfeToolStripMenuItem.Size = new System.Drawing.Size(55, 26);
             this.hilfeToolStripMenuItem.Text = "Hilfe";
             // 
             // welcomeSign
@@ -170,7 +171,7 @@
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Bahnschrift SemiBold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(3, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(193, 57);
@@ -181,7 +182,7 @@
             // 
             // button2
             // 
-            this.button2.Font = new System.Drawing.Font("Bahnschrift SemiBold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(3, 66);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(193, 57);
@@ -192,7 +193,7 @@
             // 
             // button3
             // 
-            this.button3.Font = new System.Drawing.Font("Bahnschrift SemiBold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(3, 129);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(193, 57);
@@ -203,7 +204,7 @@
             // 
             // button4
             // 
-            this.button4.Font = new System.Drawing.Font("Bahnschrift SemiBold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Location = new System.Drawing.Point(3, 192);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(193, 57);
@@ -214,7 +215,7 @@
             // 
             // button5
             // 
-            this.button5.Font = new System.Drawing.Font("Bahnschrift SemiBold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.Location = new System.Drawing.Point(3, 255);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(193, 57);
@@ -223,21 +224,10 @@
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button5.UseVisualStyleBackColor = true;
             // 
-            // webBrowser1
-            // 
-            this.webBrowser1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.webBrowser1.Location = new System.Drawing.Point(224, 96);
-            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
-            this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(746, 485);
-            this.webBrowser1.TabIndex = 13;
-            this.webBrowser1.Url = new System.Uri("C:\\Users\\Miami\\source\\repos\\EVP\\EVP\\start\\start.html", System.UriKind.Absolute);
-            // 
             // button6
             // 
-            this.button6.Font = new System.Drawing.Font("Bahnschrift SemiBold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button6.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.Location = new System.Drawing.Point(12, 524);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(193, 57);
@@ -247,12 +237,27 @@
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
+            // webView21
+            // 
+            this.webView21.AllowExternalDrop = true;
+            this.webView21.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.webView21.CreationProperties = null;
+            this.webView21.DefaultBackgroundColor = System.Drawing.Color.White;
+            this.webView21.Location = new System.Drawing.Point(224, 99);
+            this.webView21.Name = "webView21";
+            this.webView21.Size = new System.Drawing.Size(746, 482);
+            this.webView21.Source = new System.Uri("https://www.google.com", System.UriKind.Absolute);
+            this.webView21.TabIndex = 14;
+            this.webView21.ZoomFactor = 0.5D;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(982, 593);
-            this.Controls.Add(this.webBrowser1);
+            this.Controls.Add(this.webView21);
             this.Controls.Add(this.welcomeSign);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
@@ -270,6 +275,7 @@
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.webView21)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -289,12 +295,12 @@
         private System.Windows.Forms.Label welcomeSign;
         private System.Windows.Forms.ToolStripMenuItem einstellungenToolStripMenuItem;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.WebBrowser webBrowser1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
+        private Microsoft.Web.WebView2.WinForms.WebView2 webView21;
     }
 }
