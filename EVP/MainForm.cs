@@ -45,7 +45,7 @@ namespace EVP
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            welcomeSign.Text = $"Willkommen zu EVP, {Environment.UserName}";
+
         }
 
         private void einstellungenToolStripMenuItem_Click(object sender, EventArgs e)
