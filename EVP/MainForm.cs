@@ -20,7 +20,16 @@ namespace EVP
 
         private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Program.CloseProgram();
+            var confirmResult = MessageBox.Show("EVP Schließen?", "EVP Schließvorgang", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (confirmResult == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+            else
+            {
+                MainForm mainform = new MainForm();
+                mainform.Show();
+            }
         }
 
         private void überToolStripMenuItem_Click(object sender, EventArgs e)
@@ -40,31 +49,6 @@ namespace EVP
         }
 
         private void einstellungenToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-          Program.CloseProgram();
-        }
-
-        private void webView21_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

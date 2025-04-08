@@ -25,6 +25,10 @@ namespace EVP
             {
                 Application.Exit();
             }
+            else
+            {
+                return;
+            }
 
         }
     }
