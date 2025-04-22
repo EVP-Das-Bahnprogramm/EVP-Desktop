@@ -16,5 +16,15 @@ namespace EVP
         {
             InitializeComponent();
         }
+
+        private void NewProfile_Init(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ImportProfile_Init(object sender, EventArgs e)
+        {
+
+        }
     }
 }

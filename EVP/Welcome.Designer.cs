@@ -32,6 +32,8 @@
             this.welcomeSign = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.NewProfile = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,11 +67,37 @@
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
+            // button2
+            // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.Location = new System.Drawing.Point(466, 498);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(495, 112);
+            this.button2.TabIndex = 10;
+            this.button2.Text = "Profil Importieren";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.ImportProfile_Init);
+            // 
+            // NewProfile
+            // 
+            this.NewProfile.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.NewProfile.Location = new System.Drawing.Point(12, 498);
+            this.NewProfile.Name = "NewProfile";
+            this.NewProfile.Size = new System.Drawing.Size(448, 112);
+            this.NewProfile.TabIndex = 9;
+            this.NewProfile.Text = "+ Neues Profil Erstellen";
+            this.NewProfile.UseVisualStyleBackColor = true;
+            this.NewProfile.Click += new System.EventHandler(this.NewProfile_Init);
+            // 
             // Welcome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(973, 622);
+            this.Controls.Add(this.NewProfile);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.welcomeSign);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
@@ -87,5 +115,7 @@
         private System.Windows.Forms.Label welcomeSign;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button NewProfile;
     }
 }
