@@ -39,13 +39,14 @@
             this.betriebstellenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hilfeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.homeButton = new System.Windows.Forms.Button();
+            this.placesButton = new System.Windows.Forms.Button();
+            this.ProgramButton = new System.Windows.Forms.Button();
+            this.settingsButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.photoButton = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -125,67 +126,68 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.button1);
-            this.flowLayoutPanel1.Controls.Add(this.button2);
-            this.flowLayoutPanel1.Controls.Add(this.button3);
-            this.flowLayoutPanel1.Controls.Add(this.button4);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 96);
+            this.flowLayoutPanel1.Controls.Add(this.homeButton);
+            this.flowLayoutPanel1.Controls.Add(this.photoButton);
+            this.flowLayoutPanel1.Controls.Add(this.placesButton);
+            this.flowLayoutPanel1.Controls.Add(this.ProgramButton);
+            this.flowLayoutPanel1.Controls.Add(this.settingsButton);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 73);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(196, 253);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(143, 419);
             this.flowLayoutPanel1.TabIndex = 12;
             // 
-            // button1
+            // homeButton
             // 
-            this.button1.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(3, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(193, 57);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Start";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = true;
+            this.homeButton.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.homeButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.homeButton.Location = new System.Drawing.Point(3, 3);
+            this.homeButton.Name = "homeButton";
+            this.homeButton.Size = new System.Drawing.Size(140, 57);
+            this.homeButton.TabIndex = 0;
+            this.homeButton.Text = "Start";
+            this.homeButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.homeButton.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // placesButton
             // 
-            this.button2.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(3, 66);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(193, 57);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Einstellungen";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = true;
+            this.placesButton.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.placesButton.Location = new System.Drawing.Point(3, 129);
+            this.placesButton.Name = "placesButton";
+            this.placesButton.Size = new System.Drawing.Size(140, 57);
+            this.placesButton.TabIndex = 1;
+            this.placesButton.Text = "Stellen";
+            this.placesButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.placesButton.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // ProgramButton
             // 
-            this.button3.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(3, 129);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(193, 57);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Hilfe";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.UseVisualStyleBackColor = true;
+            this.ProgramButton.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProgramButton.Location = new System.Drawing.Point(3, 192);
+            this.ProgramButton.Name = "ProgramButton";
+            this.ProgramButton.Size = new System.Drawing.Size(140, 57);
+            this.ProgramButton.TabIndex = 2;
+            this.ProgramButton.Text = "Programme";
+            this.ProgramButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ProgramButton.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // settingsButton
             // 
-            this.button4.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(3, 192);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(193, 57);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Neu...";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.UseVisualStyleBackColor = true;
+            this.settingsButton.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.settingsButton.Location = new System.Drawing.Point(3, 255);
+            this.settingsButton.Name = "settingsButton";
+            this.settingsButton.Size = new System.Drawing.Size(140, 57);
+            this.settingsButton.TabIndex = 3;
+            this.settingsButton.Text = "Einst.";
+            this.settingsButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.settingsButton.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(137, 51);
+            this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 4.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(107, 44);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(36, 16);
+            this.label1.Size = new System.Drawing.Size(22, 10);
             this.label1.TabIndex = 1;
             this.label1.Text = "ALPHA";
             // 
@@ -205,10 +207,21 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(12, 31);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(196, 59);
+            this.pictureBox1.Size = new System.Drawing.Size(143, 36);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
+            // 
+            // photoButton
+            // 
+            this.photoButton.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.photoButton.Location = new System.Drawing.Point(3, 66);
+            this.photoButton.Name = "photoButton";
+            this.photoButton.Size = new System.Drawing.Size(140, 57);
+            this.photoButton.TabIndex = 4;
+            this.photoButton.Text = "Fotos";
+            this.photoButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.photoButton.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
@@ -247,12 +260,13 @@
         private System.Windows.Forms.ToolStripMenuItem programmBeendenToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem einstellungenToolStripMenuItem;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button homeButton;
+        private System.Windows.Forms.Button placesButton;
+        private System.Windows.Forms.Button ProgramButton;
+        private System.Windows.Forms.Button settingsButton;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button photoButton;
     }
 }
