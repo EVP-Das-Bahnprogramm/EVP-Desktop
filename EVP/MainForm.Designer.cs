@@ -40,16 +40,20 @@
             this.hilfeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.homeButton = new System.Windows.Forms.Button();
+            this.photoButton = new System.Windows.Forms.Button();
             this.placesButton = new System.Windows.Forms.Button();
             this.ProgramButton = new System.Windows.Forms.Button();
             this.settingsButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.photoButton = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.fotogalerie1 = new EVP.Fotogalerie();
+            this.startPage1 = new EVP.src.subpages.startPage();
             this.menuStrip1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -63,7 +67,7 @@
             this.hilfeToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(982, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(982, 30);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -74,7 +78,7 @@
             this.programmBeendenToolStripMenuItem,
             this.einstellungenToolStripMenuItem});
             this.programmToolStripMenuItem.Name = "programmToolStripMenuItem";
-            this.programmToolStripMenuItem.Size = new System.Drawing.Size(93, 24);
+            this.programmToolStripMenuItem.Size = new System.Drawing.Size(93, 26);
             this.programmToolStripMenuItem.Text = "Programm";
             // 
             // überToolStripMenuItem
@@ -103,25 +107,25 @@
             // bildereintragToolStripMenuItem
             // 
             this.bildereintragToolStripMenuItem.Name = "bildereintragToolStripMenuItem";
-            this.bildereintragToolStripMenuItem.Size = new System.Drawing.Size(95, 24);
+            this.bildereintragToolStripMenuItem.Size = new System.Drawing.Size(95, 26);
             this.bildereintragToolStripMenuItem.Text = "Bearbeiten";
             // 
             // berToolStripMenuItem
             // 
             this.berToolStripMenuItem.Name = "berToolStripMenuItem";
-            this.berToolStripMenuItem.Size = new System.Drawing.Size(108, 24);
+            this.berToolStripMenuItem.Size = new System.Drawing.Size(108, 26);
             this.berToolStripMenuItem.Text = "Bildergalerie";
             // 
             // betriebstellenToolStripMenuItem
             // 
             this.betriebstellenToolStripMenuItem.Name = "betriebstellenToolStripMenuItem";
-            this.betriebstellenToolStripMenuItem.Size = new System.Drawing.Size(114, 24);
+            this.betriebstellenToolStripMenuItem.Size = new System.Drawing.Size(114, 26);
             this.betriebstellenToolStripMenuItem.Text = "Betriebstellen";
             // 
             // hilfeToolStripMenuItem
             // 
             this.hilfeToolStripMenuItem.Name = "hilfeToolStripMenuItem";
-            this.hilfeToolStripMenuItem.Size = new System.Drawing.Size(55, 24);
+            this.hilfeToolStripMenuItem.Size = new System.Drawing.Size(55, 26);
             this.hilfeToolStripMenuItem.Text = "Hilfe";
             // 
             // flowLayoutPanel1
@@ -133,7 +137,7 @@
             this.flowLayoutPanel1.Controls.Add(this.settingsButton);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 73);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(143, 419);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(143, 484);
             this.flowLayoutPanel1.TabIndex = 12;
             // 
             // homeButton
@@ -147,6 +151,17 @@
             this.homeButton.Text = "Start";
             this.homeButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.homeButton.UseVisualStyleBackColor = true;
+            // 
+            // photoButton
+            // 
+            this.photoButton.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.photoButton.Location = new System.Drawing.Point(3, 66);
+            this.photoButton.Name = "photoButton";
+            this.photoButton.Size = new System.Drawing.Size(140, 57);
+            this.photoButton.TabIndex = 4;
+            this.photoButton.Text = "Fotos";
+            this.photoButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.photoButton.UseVisualStyleBackColor = true;
             // 
             // placesButton
             // 
@@ -196,7 +211,7 @@
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 563);
+            this.label2.Location = new System.Drawing.Point(11, 560);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(117, 21);
             this.label2.TabIndex = 15;
@@ -212,22 +227,39 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
-            // photoButton
+            // panel1
             // 
-            this.photoButton.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.photoButton.Location = new System.Drawing.Point(3, 66);
-            this.photoButton.Name = "photoButton";
-            this.photoButton.Size = new System.Drawing.Size(140, 57);
-            this.photoButton.TabIndex = 4;
-            this.photoButton.Text = "Fotos";
-            this.photoButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.photoButton.UseVisualStyleBackColor = true;
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.SystemColors.Control;
+            this.panel1.Controls.Add(this.startPage1);
+            this.panel1.Controls.Add(this.fotogalerie1);
+            this.panel1.Location = new System.Drawing.Point(161, 31);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(809, 550);
+            this.panel1.TabIndex = 16;
+            // 
+            // fotogalerie1
+            // 
+            this.fotogalerie1.Location = new System.Drawing.Point(151, -511);
+            this.fotogalerie1.Name = "fotogalerie1";
+            this.fotogalerie1.Size = new System.Drawing.Size(1000, 612);
+            this.fotogalerie1.TabIndex = 0;
+            // 
+            // startPage1
+            // 
+            this.startPage1.Location = new System.Drawing.Point(0, 0);
+            this.startPage1.Name = "startPage1";
+            this.startPage1.Size = new System.Drawing.Size(809, 550);
+            this.startPage1.TabIndex = 1;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(982, 593);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
@@ -244,6 +276,7 @@
             this.menuStrip1.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -268,5 +301,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button photoButton;
+        private Fotogalerie fotogalerie1;
+        private System.Windows.Forms.Panel panel1;
+        private src.subpages.startPage startPage1;
     }
 }
