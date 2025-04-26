@@ -1,6 +1,6 @@
 ﻿namespace EVP.src.subpages
 {
-    partial class startPage
+    partial class programPage
     {
         /// <summary> 
         /// Erforderliche Designervariable.
@@ -36,17 +36,16 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(34, 16);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Start";
+            this.label1.Size = new System.Drawing.Size(78, 16);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Programme";
             // 
-            // startPage
+            // programPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
             this.Controls.Add(this.label1);
-            this.Name = "startPage";
+            this.Name = "programPage";
             this.Size = new System.Drawing.Size(958, 489);
             this.ResumeLayout(false);
             this.PerformLayout();

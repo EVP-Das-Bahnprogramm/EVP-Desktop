@@ -97,6 +97,24 @@
     <Compile Include="Splash.Designer.cs">
       <DependentUpon>Splash.cs</DependentUpon>
     </Compile>
+    <Compile Include="src\subpages\gallPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\subpages\gallPage.Designer.cs">
+      <DependentUpon>gallPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\subpages\placesPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\subpages\placesPage.Designer.cs">
+      <DependentUpon>placesPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\subpages\programPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\subpages\programPage.Designer.cs">
+      <DependentUpon>programPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="src\subpages\startPage.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -128,6 +146,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Splash.resx">
       <DependentUpon>Splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\subpages\gallPage.resx">
+      <DependentUpon>gallPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\subpages\placesPage.resx">
+      <DependentUpon>placesPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\subpages\programPage.resx">
+      <DependentUpon>programPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="src\subpages\startPage.resx">
       <DependentUpon>startPage.cs</DependentUpon>

@@ -45,14 +45,14 @@
             this.settingsButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.mainContainer = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -77,7 +77,7 @@
             this.programmBeendenToolStripMenuItem,
             this.einstellungenToolStripMenuItem});
             this.programmToolStripMenuItem.Name = "programmToolStripMenuItem";
-            this.programmToolStripMenuItem.Size = new System.Drawing.Size(93, 24);
+            this.programmToolStripMenuItem.Size = new System.Drawing.Size(93, 26);
             this.programmToolStripMenuItem.Text = "Programm";
             // 
             // überToolStripMenuItem
@@ -106,32 +106,32 @@
             // bildereintragToolStripMenuItem
             // 
             this.bildereintragToolStripMenuItem.Name = "bildereintragToolStripMenuItem";
-            this.bildereintragToolStripMenuItem.Size = new System.Drawing.Size(95, 24);
+            this.bildereintragToolStripMenuItem.Size = new System.Drawing.Size(95, 26);
             this.bildereintragToolStripMenuItem.Text = "Bearbeiten";
             // 
             // berToolStripMenuItem
             // 
             this.berToolStripMenuItem.Name = "berToolStripMenuItem";
-            this.berToolStripMenuItem.Size = new System.Drawing.Size(108, 24);
+            this.berToolStripMenuItem.Size = new System.Drawing.Size(108, 26);
             this.berToolStripMenuItem.Text = "Bildergalerie";
             // 
             // betriebstellenToolStripMenuItem
             // 
             this.betriebstellenToolStripMenuItem.Name = "betriebstellenToolStripMenuItem";
-            this.betriebstellenToolStripMenuItem.Size = new System.Drawing.Size(114, 24);
+            this.betriebstellenToolStripMenuItem.Size = new System.Drawing.Size(114, 26);
             this.betriebstellenToolStripMenuItem.Text = "Betriebstellen";
             // 
             // hilfeToolStripMenuItem
             // 
             this.hilfeToolStripMenuItem.Name = "hilfeToolStripMenuItem";
-            this.hilfeToolStripMenuItem.Size = new System.Drawing.Size(55, 24);
+            this.hilfeToolStripMenuItem.Size = new System.Drawing.Size(55, 26);
             this.hilfeToolStripMenuItem.Text = "Hilfe";
             // 
             // homeButton
             // 
             this.homeButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.homeButton.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.homeButton.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.homeButton.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.homeButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.homeButton.Location = new System.Drawing.Point(325, 3);
@@ -220,26 +220,16 @@
             this.label2.TabIndex = 15;
             this.label2.Text = "Das Bahnprogramm";
             // 
-            // pictureBox1
+            // mainContainer
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(143, 36);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
-            // panel1
-            // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.mainContainer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel1.Location = new System.Drawing.Point(12, 92);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(958, 489);
-            this.panel1.TabIndex = 16;
+            this.mainContainer.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.mainContainer.Location = new System.Drawing.Point(12, 92);
+            this.mainContainer.Name = "mainContainer";
+            this.mainContainer.Size = new System.Drawing.Size(958, 489);
+            this.mainContainer.TabIndex = 16;
             // 
             // panel2
             // 
@@ -275,6 +265,16 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(809, 55);
             this.tableLayoutPanel1.TabIndex = 18;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(143, 36);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -282,7 +282,7 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(982, 593);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.mainContainer);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.panel2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -291,12 +291,13 @@
             this.Name = "MainForm";
             this.Text = "EVP";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -320,7 +321,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button photoButton;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel mainContainer;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }
