@@ -42,20 +42,6 @@ namespace EVP
             userControl.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
         }
 
-        private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            var confirmResult = MessageBox.Show("EVP Schließen?", "EVP Schließvorgang", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (confirmResult == DialogResult.Yes)
-            {
-                Application.Exit();
-            }
-            else
-            {
-                MainForm mainform = new MainForm();
-                mainform.Show();
-            }
-        }
-
         private void überToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AboutBox1 abt = new AboutBox1();
@@ -118,6 +104,22 @@ namespace EVP
             auc(SP);
             homeButton.BackColor = SystemColors.ControlLight;
             lastClickedButton = homeButton;
+        }
+
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                var confirmResult = MessageBox.Show("EVP Schließen?", "EVP Schließvorgang", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (confirmResult == DialogResult.Yes)
+                {
+                    Application.Exit();
+                }
+                else
+                {
+                    e.Cancel = true;
+                }
+            }
         }
     }
 }

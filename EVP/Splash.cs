@@ -25,13 +25,19 @@ namespace EVP
             progressBar1.Increment(1);
             if (progressBar1.Value == 100) {
                 timer1.Enabled = false;
-
                 if (!Directory.Exists(Program.userDataFolderPath))
                 {
+                    label1.Visible = true;
+                    Welcome welc = new Welcome();
+                    welc.Show();
+                    Hide();
                 }
-                MainForm Main = new MainForm();
-                Main.Show();
-                Hide();
+                else
+                {
+                    MainForm Main = new MainForm();
+                    Main.Show();
+                    Hide();
+                }
             }
 
         }

@@ -69,6 +69,7 @@
             this.label1.Size = new System.Drawing.Size(163, 16);
             this.label1.TabIndex = 2;
             this.label1.Text = "Einrichtung wird gestartet...";
+            this.label1.Visible = false;
             // 
             // Splash
             // 
