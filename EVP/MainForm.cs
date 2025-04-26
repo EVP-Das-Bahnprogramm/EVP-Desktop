@@ -43,12 +43,32 @@ namespace EVP
             Program.CloseProgram();
         }
 
-        private void MainForm_Load(object sender, EventArgs e)
+        private void einstellungenToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void einstellungenToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ProgramButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void settingsButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void placesButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void photoButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void homeButton_Click(object sender, EventArgs e)
         {
 
         }

@@ -62,7 +62,7 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.Controls.Add(this.groupBox1);
             this.Name = "startPage";
-            this.Size = new System.Drawing.Size(809, 550);
+            this.Size = new System.Drawing.Size(958, 489);
             ((System.ComponentModel.ISupportInitialize)(this.POTD_Pic)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
