@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -9,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using EVP.src.subpages;
+using System.Xml;
 
 namespace EVP
 {
@@ -37,6 +39,7 @@ namespace EVP
             mainContainer.Controls.Clear();
             mainContainer.Controls.Add(userControl);
             userControl.BringToFront();
+            userControl.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
         }
 
         private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
@@ -66,7 +69,8 @@ namespace EVP
 
         private void einstellungenToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Einstellungen sind noch nicht verfügbar.", "Einstellungen", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            Settings settingsPage = new Settings();
+            settingsPage.Show(); // Corrected the variable name to "settingsPage"  
         }
 
         private void ProgramButton_Click(object sender, EventArgs e)
@@ -80,7 +84,8 @@ namespace EVP
 
         private void settingsButton_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Einstellungen sind noch nicht verfügbar.", "Einstellungen", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            Settings settingsPage = new Settings();
+            settingsPage.Show(); // Corrected the variable name to "settingsPage"  
         }
 
         private void placesButton_Click(object sender, EventArgs e)

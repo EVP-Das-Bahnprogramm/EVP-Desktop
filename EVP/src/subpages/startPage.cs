@@ -16,5 +16,10 @@ namespace EVP.src.subpages
         {
             InitializeComponent();
         }
+
+        private void startPage_Load(object sender, EventArgs e)
+        {
+            welcomeLabel.Text = "Willkommen " + "jufu" + "!";
+        }
     }
 }

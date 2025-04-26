@@ -47,12 +47,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.mainContainer = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.menuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -66,7 +66,7 @@
             this.hilfeToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(982, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(982, 28);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -77,7 +77,7 @@
             this.programmBeendenToolStripMenuItem,
             this.einstellungenToolStripMenuItem});
             this.programmToolStripMenuItem.Name = "programmToolStripMenuItem";
-            this.programmToolStripMenuItem.Size = new System.Drawing.Size(93, 26);
+            this.programmToolStripMenuItem.Size = new System.Drawing.Size(93, 24);
             this.programmToolStripMenuItem.Text = "Programm";
             // 
             // überToolStripMenuItem
@@ -106,25 +106,25 @@
             // bildereintragToolStripMenuItem
             // 
             this.bildereintragToolStripMenuItem.Name = "bildereintragToolStripMenuItem";
-            this.bildereintragToolStripMenuItem.Size = new System.Drawing.Size(95, 26);
+            this.bildereintragToolStripMenuItem.Size = new System.Drawing.Size(95, 24);
             this.bildereintragToolStripMenuItem.Text = "Bearbeiten";
             // 
             // berToolStripMenuItem
             // 
             this.berToolStripMenuItem.Name = "berToolStripMenuItem";
-            this.berToolStripMenuItem.Size = new System.Drawing.Size(108, 26);
+            this.berToolStripMenuItem.Size = new System.Drawing.Size(108, 24);
             this.berToolStripMenuItem.Text = "Bildergalerie";
             // 
             // betriebstellenToolStripMenuItem
             // 
             this.betriebstellenToolStripMenuItem.Name = "betriebstellenToolStripMenuItem";
-            this.betriebstellenToolStripMenuItem.Size = new System.Drawing.Size(114, 26);
+            this.betriebstellenToolStripMenuItem.Size = new System.Drawing.Size(114, 24);
             this.betriebstellenToolStripMenuItem.Text = "Betriebstellen";
             // 
             // hilfeToolStripMenuItem
             // 
             this.hilfeToolStripMenuItem.Name = "hilfeToolStripMenuItem";
-            this.hilfeToolStripMenuItem.Size = new System.Drawing.Size(55, 26);
+            this.hilfeToolStripMenuItem.Size = new System.Drawing.Size(55, 24);
             this.hilfeToolStripMenuItem.Text = "Hilfe";
             // 
             // homeButton
@@ -225,10 +225,10 @@
             this.mainContainer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.mainContainer.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.mainContainer.BackColor = System.Drawing.SystemColors.Control;
             this.mainContainer.Location = new System.Drawing.Point(12, 92);
             this.mainContainer.Name = "mainContainer";
-            this.mainContainer.Size = new System.Drawing.Size(958, 489);
+            this.mainContainer.Size = new System.Drawing.Size(955, 489);
             this.mainContainer.TabIndex = 16;
             // 
             // panel2
@@ -241,6 +241,16 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(143, 55);
             this.panel2.TabIndex = 17;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(143, 36);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
             // tableLayoutPanel1
             // 
@@ -265,16 +275,6 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(809, 55);
             this.tableLayoutPanel1.TabIndex = 18;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(143, 36);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -296,8 +296,8 @@
             this.menuStrip1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
