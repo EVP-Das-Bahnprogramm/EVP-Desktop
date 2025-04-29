@@ -101,7 +101,7 @@ namespace EVP
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            startPage SP = new startPage();
+            browserUI SP = new browserUI();
             auc(SP);
             homeButton.BackColor = SystemColors.ControlLight;
             lastClickedButton = homeButton;
