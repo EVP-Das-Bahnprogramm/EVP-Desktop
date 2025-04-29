@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using EVP.src.subpages;
 using System.Xml;
+using EVP.Suppages;
 
 namespace EVP
 {
@@ -44,7 +45,7 @@ namespace EVP
 
         private void überToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AboutBox1 abt = new AboutBox1();
+            AboutBox abt = new AboutBox();
             abt.Show();
         }
 

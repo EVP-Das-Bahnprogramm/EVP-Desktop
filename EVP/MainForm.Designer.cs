@@ -77,13 +77,13 @@
             this.programmBeendenToolStripMenuItem,
             this.einstellungenToolStripMenuItem});
             this.programmToolStripMenuItem.Name = "programmToolStripMenuItem";
-            this.programmToolStripMenuItem.Size = new System.Drawing.Size(93, 24);
+            this.programmToolStripMenuItem.Size = new System.Drawing.Size(91, 24);
             this.programmToolStripMenuItem.Text = "Programm";
             // 
             // überToolStripMenuItem
             // 
             this.überToolStripMenuItem.Name = "überToolStripMenuItem";
-            this.überToolStripMenuItem.Size = new System.Drawing.Size(303, 26);
+            this.überToolStripMenuItem.Size = new System.Drawing.Size(289, 24);
             this.überToolStripMenuItem.Text = "Über";
             this.überToolStripMenuItem.Click += new System.EventHandler(this.überToolStripMenuItem_Click);
             // 
@@ -91,7 +91,7 @@
             // 
             this.programmBeendenToolStripMenuItem.Name = "programmBeendenToolStripMenuItem";
             this.programmBeendenToolStripMenuItem.ShortcutKeyDisplayString = "Alt+F4";
-            this.programmBeendenToolStripMenuItem.Size = new System.Drawing.Size(303, 26);
+            this.programmBeendenToolStripMenuItem.Size = new System.Drawing.Size(289, 24);
             this.programmBeendenToolStripMenuItem.Text = "Programm Beenden";
             this.programmBeendenToolStripMenuItem.Click += new System.EventHandler(this.programmBeendenToolStripMenuItem_Click);
             // 
@@ -99,32 +99,32 @@
             // 
             this.einstellungenToolStripMenuItem.Name = "einstellungenToolStripMenuItem";
             this.einstellungenToolStripMenuItem.ShortcutKeyDisplayString = "STRG+UMSCH+P";
-            this.einstellungenToolStripMenuItem.Size = new System.Drawing.Size(303, 26);
+            this.einstellungenToolStripMenuItem.Size = new System.Drawing.Size(289, 24);
             this.einstellungenToolStripMenuItem.Text = "Einstellungen";
             this.einstellungenToolStripMenuItem.Click += new System.EventHandler(this.einstellungenToolStripMenuItem_Click);
             // 
             // bildereintragToolStripMenuItem
             // 
             this.bildereintragToolStripMenuItem.Name = "bildereintragToolStripMenuItem";
-            this.bildereintragToolStripMenuItem.Size = new System.Drawing.Size(95, 24);
+            this.bildereintragToolStripMenuItem.Size = new System.Drawing.Size(93, 24);
             this.bildereintragToolStripMenuItem.Text = "Bearbeiten";
             // 
             // berToolStripMenuItem
             // 
             this.berToolStripMenuItem.Name = "berToolStripMenuItem";
-            this.berToolStripMenuItem.Size = new System.Drawing.Size(108, 24);
+            this.berToolStripMenuItem.Size = new System.Drawing.Size(106, 24);
             this.berToolStripMenuItem.Text = "Bildergalerie";
             // 
             // betriebstellenToolStripMenuItem
             // 
             this.betriebstellenToolStripMenuItem.Name = "betriebstellenToolStripMenuItem";
-            this.betriebstellenToolStripMenuItem.Size = new System.Drawing.Size(114, 24);
+            this.betriebstellenToolStripMenuItem.Size = new System.Drawing.Size(112, 24);
             this.betriebstellenToolStripMenuItem.Text = "Betriebstellen";
             // 
             // hilfeToolStripMenuItem
             // 
             this.hilfeToolStripMenuItem.Name = "hilfeToolStripMenuItem";
-            this.hilfeToolStripMenuItem.Size = new System.Drawing.Size(55, 24);
+            this.hilfeToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
             this.hilfeToolStripMenuItem.Text = "Hilfe";
             // 
             // homeButton
@@ -180,7 +180,7 @@
             this.ProgramButton.Name = "ProgramButton";
             this.ProgramButton.Size = new System.Drawing.Size(155, 49);
             this.ProgramButton.TabIndex = 2;
-            this.ProgramButton.Text = "Programme";
+            this.ProgramButton.Text = "S. Inhalte";
             this.ProgramButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ProgramButton.UseVisualStyleBackColor = true;
             this.ProgramButton.Click += new System.EventHandler(this.ProgramButton_Click);
@@ -205,7 +205,7 @@
             this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 4.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(86, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(22, 10);
+            this.label1.Size = new System.Drawing.Size(24, 11);
             this.label1.TabIndex = 1;
             this.label1.Text = "ALPHA";
             // 
@@ -216,7 +216,7 @@
             this.label2.Font = new System.Drawing.Font("Bahnschrift", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(3, 37);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(124, 16);
+            this.label2.Size = new System.Drawing.Size(134, 17);
             this.label2.TabIndex = 15;
             this.label2.Text = "Das Bahnprogramm";
             // 

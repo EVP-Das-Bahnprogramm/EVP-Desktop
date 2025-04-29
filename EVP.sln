@@ -5,6 +5,8 @@ VisualStudioVersion = 17.13.35919.96
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EVP", "EVP\EVP.csproj", "{1047B8B4-3125-4A91-A8E8-DB5726B874CF}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "EVPSetup", "EVPSetup\EVPSetup.vdproj", "{8553901E-80F3-65A2-DCCB-5A8319027405}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{1047B8B4-3125-4A91-A8E8-DB5726B874CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1047B8B4-3125-4A91-A8E8-DB5726B874CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1047B8B4-3125-4A91-A8E8-DB5726B874CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8553901E-80F3-65A2-DCCB-5A8319027405}.Debug|Any CPU.ActiveCfg = Debug
+		{8553901E-80F3-65A2-DCCB-5A8319027405}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

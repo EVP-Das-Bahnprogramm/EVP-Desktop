@@ -1,6 +1,6 @@
 ﻿namespace EVP
 {
-    partial class AboutBox1
+    partial class AboutBox
     {
         /// <summary>
         /// Erforderliche Designervariable.

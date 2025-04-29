@@ -34,7 +34,10 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
             this.NewProfile = new System.Windows.Forms.Button();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // welcomeSign
@@ -71,9 +74,9 @@
             // 
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Location = new System.Drawing.Point(466, 498);
+            this.button2.Location = new System.Drawing.Point(477, 3);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(495, 112);
+            this.button2.Size = new System.Drawing.Size(469, 94);
             this.button2.TabIndex = 10;
             this.button2.Text = "Profil Importieren";
             this.button2.UseVisualStyleBackColor = true;
@@ -83,21 +86,42 @@
             // 
             this.NewProfile.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.NewProfile.Location = new System.Drawing.Point(12, 498);
+            this.NewProfile.Location = new System.Drawing.Point(3, 3);
             this.NewProfile.Name = "NewProfile";
-            this.NewProfile.Size = new System.Drawing.Size(448, 112);
+            this.NewProfile.Size = new System.Drawing.Size(468, 94);
             this.NewProfile.TabIndex = 9;
             this.NewProfile.Text = "+ Neues Profil Erstellen";
             this.NewProfile.UseVisualStyleBackColor = true;
             this.NewProfile.Click += new System.EventHandler(this.NewProfile_Init);
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.NewProfile, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.button2, 1, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 510);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(949, 100);
+            this.tableLayoutPanel1.TabIndex = 11;
+            // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(12, 77);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(946, 427);
+            this.panel1.TabIndex = 12;
             // 
             // Welcome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(973, 622);
-            this.Controls.Add(this.NewProfile);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.welcomeSign);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
@@ -105,7 +129,9 @@
             this.Name = "Welcome";
             this.Text = "Willkommen zu EVP";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Welcome_FormClosing);
+            this.Load += new System.EventHandler(this.Welcome_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -118,5 +144,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button NewProfile;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Panel panel1;
     }
 }

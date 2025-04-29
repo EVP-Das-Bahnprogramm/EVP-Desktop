@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace EVP
+namespace EVP.Suppages
 {
-    public partial class Fotogalerie : UserControl
+    public partial class gallPage : UserControl
     {
-        public Fotogalerie()
+        public gallPage()
         {
             InitializeComponent();
         }
