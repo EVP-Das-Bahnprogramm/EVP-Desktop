@@ -109,6 +109,7 @@
     <Compile Include="Splash\Splash.Designer.cs">
       <DependentUpon>Splash.cs</DependentUpon>
     </Compile>
+    <Compile Include="src\IconHelper.cs" />
     <Compile Include="Suppages\browserUI.cs">
       <SubType>UserControl</SubType>
     </Compile>

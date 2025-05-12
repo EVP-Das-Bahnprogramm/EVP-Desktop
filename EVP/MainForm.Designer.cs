@@ -180,10 +180,11 @@
             this.ProgramButton.Name = "ProgramButton";
             this.ProgramButton.Size = new System.Drawing.Size(155, 49);
             this.ProgramButton.TabIndex = 2;
-            this.ProgramButton.Text = "S. Inhalte";
+            this.ProgramButton.Text = "Sonst. Inhalte";
             this.ProgramButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ProgramButton.UseVisualStyleBackColor = true;
             this.ProgramButton.Click += new System.EventHandler(this.ProgramButton_Click);
+            this.ProgramButton.Resize += new System.EventHandler(this.ProgramButton_Resize);
             // 
             // settingsButton
             // 
@@ -198,6 +199,7 @@
             this.settingsButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.settingsButton.UseVisualStyleBackColor = true;
             this.settingsButton.Click += new System.EventHandler(this.settingsButton_Click);
+            this.settingsButton.Resize += new System.EventHandler(this.settingsButton_Resize);
             // 
             // label1
             // 

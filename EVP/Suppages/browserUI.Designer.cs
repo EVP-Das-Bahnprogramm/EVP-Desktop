@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.searchBox = new System.Windows.Forms.TextBox();
             this.webView21 = new Microsoft.Web.WebView2.WinForms.WebView2();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.nextButton = new System.Windows.Forms.Button();
@@ -38,14 +38,15 @@
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox1
+            // searchBox
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Font = new System.Drawing.Font("Bahnschrift", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(276, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(679, 35);
-            this.textBox1.TabIndex = 4;
+            this.searchBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.searchBox.Font = new System.Drawing.Font("Bahnschrift", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchBox.Location = new System.Drawing.Point(132, 3);
+            this.searchBox.Name = "searchBox";
+            this.searchBox.Size = new System.Drawing.Size(823, 35);
+            this.searchBox.TabIndex = 4;
             // 
             // webView21
             // 
@@ -75,42 +76,45 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(270, 38);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(126, 42);
             this.tableLayoutPanel1.TabIndex = 5;
             // 
             // nextButton
             // 
             this.nextButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
-            this.nextButton.Location = new System.Drawing.Point(182, 3);
+            this.nextButton.Location = new System.Drawing.Point(86, 3);
             this.nextButton.Name = "nextButton";
-            this.nextButton.Size = new System.Drawing.Size(84, 32);
+            this.nextButton.Size = new System.Drawing.Size(37, 36);
             this.nextButton.TabIndex = 4;
             this.nextButton.UseVisualStyleBackColor = true;
+            this.nextButton.Click += new System.EventHandler(this.nextButton_Click);
             // 
             // reloadButton
             // 
             this.reloadButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
             this.reloadButton.Location = new System.Drawing.Point(3, 3);
             this.reloadButton.Name = "reloadButton";
-            this.reloadButton.Size = new System.Drawing.Size(83, 32);
+            this.reloadButton.Size = new System.Drawing.Size(35, 36);
             this.reloadButton.TabIndex = 3;
             this.reloadButton.UseVisualStyleBackColor = true;
+            this.reloadButton.Click += new System.EventHandler(this.reloadButton_Click);
             // 
             // backButton
             // 
             this.backButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
-            this.backButton.Location = new System.Drawing.Point(92, 3);
+            this.backButton.Location = new System.Drawing.Point(44, 3);
             this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(84, 32);
+            this.backButton.Size = new System.Drawing.Size(36, 36);
             this.backButton.TabIndex = 2;
             this.backButton.UseVisualStyleBackColor = true;
+            this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
             // browserUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.searchBox);
             this.Controls.Add(this.webView21);
             this.Name = "browserUI";
             this.Size = new System.Drawing.Size(958, 489);
@@ -123,7 +127,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox searchBox;
         private Microsoft.Web.WebView2.WinForms.WebView2 webView21;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button backButton;

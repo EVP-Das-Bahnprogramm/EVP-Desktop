@@ -34,7 +34,24 @@ namespace EVP
             }
             lastClickedButton = clickedButton;
         }
-        private void auc(UserControl userControl)
+        public void LoadBrowserUIWithSearch(string query)
+        {
+            // Create an instance of browserUI
+            browserUI browser = new browserUI();
+            browser.Dock = DockStyle.Fill;
+
+            // Set the search query in browserUI
+            browser.LoadGoogleSearch(query);
+
+            // Clear existing controls in mainContainer
+            mainContainer.Controls.Clear();
+
+            // Add browserUI to mainContainer
+            mainContainer.Controls.Add(browser);
+            browser.BringToFront();
+        }
+
+        public void auc(UserControl userControl)
         {
             userControl.Dock = DockStyle.Fill;
             mainContainer.Controls.Clear();
@@ -42,13 +59,19 @@ namespace EVP
             userControl.BringToFront();
             userControl.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
         }
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            startPage SP = new startPage();
+            auc(SP);
+            homeButton.BackColor = SystemColors.ControlLight;
+            lastClickedButton = homeButton;
+        }
 
         private void überToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AboutBox abt = new AboutBox();
             abt.Show();
         }
-
         private void programmBeendenToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Program.CloseProgram();
@@ -68,13 +91,11 @@ namespace EVP
             ProgramButton.BackColor = SystemColors.ControlLight;
 
         }
-
         private void settingsButton_Click(object sender, EventArgs e)
         {
             Settings settingsPage = new Settings();
             settingsPage.Show(); // Corrected the variable name to "settingsPage"  
         }
-
         private void placesButton_Click(object sender, EventArgs e)
         {
             ResetColor(sender);
@@ -99,13 +120,7 @@ namespace EVP
             homeButton.BackColor = SystemColors.ControlLight;
         }
 
-        private void MainForm_Load(object sender, EventArgs e)
-        {
-            browserUI SP = new browserUI();
-            auc(SP);
-            homeButton.BackColor = SystemColors.ControlLight;
-            lastClickedButton = homeButton;
-        }
+
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -120,6 +135,31 @@ namespace EVP
                 {
                     e.Cancel = true;
                 }
+            }
+        }
+
+        private void ProgramButton_Resize(object sender, EventArgs e)
+        {
+            if (ProgramButton.Width > 180)
+            {
+                ProgramButton.Text = "Sonstige Inhalte";
+            }
+            else
+            {
+                ProgramButton.Text = "Sonst. Inhalte";
+            }
+        }
+
+        private void settingsButton_Resize(object sender, EventArgs e)
+        {
+            Console.WriteLine(settingsButton.Width);
+            if (settingsButton.Width > 180)
+            {
+                settingsButton.Text = "Einstellungen";
+            }
+            else
+            {
+                settingsButton.Text = "Einst.";
             }
         }
     }
