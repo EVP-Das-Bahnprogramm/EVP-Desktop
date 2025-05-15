@@ -14,10 +14,11 @@ namespace EVP
     {
         public static string userDataFolderPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "evp-bahnprogramm");
 
-        /// <summary>
-        /// Der Haupteinstiegspunkt für die Anwendung.
-        /// </summary>
-        [STAThread]
+		/// <summary>
+		/// Der Haupteinstiegspunkt für die Anwendung.
+		/// </summary>
+		// INFO: Überprüfen Sie die Version im Eigenschaftsfenster, bis sie eine neue Version veröffentlichen.
+		[STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
