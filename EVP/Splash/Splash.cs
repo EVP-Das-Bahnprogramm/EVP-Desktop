@@ -27,7 +27,6 @@ namespace EVP
                 timer1.Enabled = false;
                 if (!Directory.Exists(Program.userDataFolderPath))
                 {
-                    label1.Visible = true;
                     Welcome welc = new Welcome();
                     welc.Show();
                     Hide();
@@ -41,5 +40,15 @@ namespace EVP
             }
 
         }
+
+        private void Splash_Load(object sender, EventArgs e)
+        {
+            versionLabel.Text = "v" + Application.ProductVersion + " Beta";
+			if (!Directory.Exists(Program.userDataFolderPath))
+            {
+				label1.Visible = true;
+			}
+
+		}
     }
 }
