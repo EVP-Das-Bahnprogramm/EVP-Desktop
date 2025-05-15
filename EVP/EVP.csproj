@@ -14,6 +14,7 @@
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -26,7 +27,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -52,7 +52,7 @@
     <UseWinFormsOutOfProcDesigner>True</UseWinFormsOutOfProcDesigner>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>EVPICO.ico</ApplicationIcon>
+    <ApplicationIcon>Resources\EVPIcon.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject>EVP.Program</StartupObject>
@@ -106,6 +106,7 @@
     <Compile Include="Prefrences\Settings.Designer.cs">
       <DependentUpon>Settings.cs</DependentUpon>
     </Compile>
+    <Compile Include="Settings.cs" />
     <Compile Include="Splash\Splash.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,7 +144,6 @@
     <Compile Include="Suppages\startPage.Designer.cs">
       <DependentUpon>startPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Setup\userdata.cs" />
     <Compile Include="Setup\Welcome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -210,9 +210,6 @@
     <None Include="Resources\AboutSplash.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="EVPICO.ico" />
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.8">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.8 %28x86 und x64%29</ProductName>
@@ -223,6 +220,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="EVPICO.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Web.WebView2.1.0.3179.45\build\Microsoft.Web.WebView2.targets" Condition="Exists('..\packages\Microsoft.Web.WebView2.1.0.3179.45\build\Microsoft.Web.WebView2.targets')" />
