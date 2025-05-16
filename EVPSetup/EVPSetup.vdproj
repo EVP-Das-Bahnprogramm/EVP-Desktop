@@ -16,32 +16,38 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_0A19483FF36A3FC487597B00AF8BB69D"
-        "OwnerKey" = "8:_DE543D62DA5148B7B2A24B321A243570"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_0A19483FF36A3FC487597B00AF8BB69D"
-        "OwnerKey" = "8:_60F97483073F7E948B7B77B5F1E525DA"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_0A19483FF36A3FC487597B00AF8BB69D"
-        "OwnerKey" = "8:_E985C710E8C18433A73597181BABA913"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_3A20463979C26E0226C1DDB907D56782"
         "OwnerKey" = "8:_DE543D62DA5148B7B2A24B321A243570"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_60F97483073F7E948B7B77B5F1E525DA"
+        "MsmKey" = "8:_3B6FB35A4070E1FA9AD2029E83A56A5F"
         "OwnerKey" = "8:_DE543D62DA5148B7B2A24B321A243570"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_6CD78011EA0FE6AFCE6EFAE97AFFE72C"
+        "OwnerKey" = "8:_DE543D62DA5148B7B2A24B321A243570"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_858A012B8FFF8E7DFFEB5A9864FD33CE"
+        "OwnerKey" = "8:_DE543D62DA5148B7B2A24B321A243570"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_858A012B8FFF8E7DFFEB5A9864FD33CE"
+        "OwnerKey" = "8:_6CD78011EA0FE6AFCE6EFAE97AFFE72C"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_858A012B8FFF8E7DFFEB5A9864FD33CE"
+        "OwnerKey" = "8:_3B6FB35A4070E1FA9AD2029E83A56A5F"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -58,12 +64,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_E985C710E8C18433A73597181BABA913"
-        "OwnerKey" = "8:_DE543D62DA5148B7B2A24B321A243570"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_DE543D62DA5148B7B2A24B321A243570"
         "MsmSig" = "8:_UNDEFINED"
@@ -71,19 +71,19 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_60F97483073F7E948B7B77B5F1E525DA"
+        "OwnerKey" = "8:_6CD78011EA0FE6AFCE6EFAE97AFFE72C"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_E985C710E8C18433A73597181BABA913"
+        "OwnerKey" = "8:_3B6FB35A4070E1FA9AD2029E83A56A5F"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_0A19483FF36A3FC487597B00AF8BB69D"
+        "OwnerKey" = "8:_858A012B8FFF8E7DFFEB5A9864FD33CE"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -187,32 +187,6 @@
         }
         "File"
         {
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_0A19483FF36A3FC487597B00AF8BB69D"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Microsoft.Web.WebView2.Core, Version=1.0.3124.44, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                }
-            "SourcePath" = "8:Microsoft.Web.WebView2.Core.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_E94447CD3DC64E33969F2ECB76EF8DA9"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_3A20463979C26E0226C1DDB907D56782"
             {
             "AssemblyRegister" = "3:1"
@@ -244,15 +218,82 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_60F97483073F7E948B7B77B5F1E525DA"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_3B6FB35A4070E1FA9AD2029E83A56A5F"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Microsoft.Web.WebView2.Wpf, Version=1.0.3124.44, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:Microsoft.Web.WebView2.WinForms, Version=1.0.3240.44, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
+                    "_3B6FB35A4070E1FA9AD2029E83A56A5F"
+                    {
+                    "Name" = "8:Microsoft.Web.WebView2.WinForms.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:Microsoft.Web.WebView2.WinForms.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_E94447CD3DC64E33969F2ECB76EF8DA9"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_6CD78011EA0FE6AFCE6EFAE97AFFE72C"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:Microsoft.Web.WebView2.Wpf, Version=1.0.3240.44, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_6CD78011EA0FE6AFCE6EFAE97AFFE72C"
+                    {
+                    "Name" = "8:Microsoft.Web.WebView2.Wpf.dll"
+                    "Attributes" = "3:512"
+                    }
                 }
             "SourcePath" = "8:Microsoft.Web.WebView2.Wpf.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_E94447CD3DC64E33969F2ECB76EF8DA9"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_858A012B8FFF8E7DFFEB5A9864FD33CE"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:Microsoft.Web.WebView2.Core, Version=1.0.3240.44, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_858A012B8FFF8E7DFFEB5A9864FD33CE"
+                    {
+                    "Name" = "8:Microsoft.Web.WebView2.Core.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:Microsoft.Web.WebView2.Core.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_E94447CD3DC64E33969F2ECB76EF8DA9"
@@ -288,32 +329,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_E985C710E8C18433A73597181BABA913"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Microsoft.Web.WebView2.WinForms, Version=1.0.3124.44, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                }
-            "SourcePath" = "8:Microsoft.Web.WebView2.WinForms.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_E94447CD3DC64E33969F2ECB76EF8DA9"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
         }
@@ -373,7 +388,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:EVP - Das Bahnprogramm"
         "ProductCode" = "8:{C94CD9CC-A910-4995-AC1A-CE8D6B451149}"
-        "PackageCode" = "8:{5D276A72-C531-4155-8202-C0FDFAEEDE7F}"
+        "PackageCode" = "8:{F60FCC7D-2701-4B7D-8362-74C79661D919}"
         "UpgradeCode" = "8:{8DB97705-6D5F-482D-A8D8-F62A5B715790}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
@@ -656,7 +671,7 @@
                     }
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_E9279D706FFE4E2D9D57226F8B4C8F1E"
                     {
-                    "Sequence" = "3:110"
+                    "Sequence" = "3:100"
                     "DisplayName" = "8:Willkommen"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"

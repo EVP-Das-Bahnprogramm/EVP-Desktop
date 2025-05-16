@@ -137,30 +137,14 @@ namespace EVP
                 }
             }
         }
+        // TODO: noch diese dinger hier löschen
 
         private void ProgramButton_Resize(object sender, EventArgs e)
         {
-            if (ProgramButton.Width > 180)
-            {
-                ProgramButton.Text = "Sonstige Inhalte";
-            }
-            else
-            {
-                ProgramButton.Text = "Sonst. Inhalte";
-            }
         }
 
         private void settingsButton_Resize(object sender, EventArgs e)
         {
-            Console.WriteLine(settingsButton.Width);
-            if (settingsButton.Width > 180)
-            {
-                settingsButton.Text = "Einstellungen";
-            }
-            else
-            {
-                settingsButton.Text = "Einst.";
-            }
         }
-    }
+	}
 }
