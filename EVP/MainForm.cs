@@ -139,12 +139,10 @@ namespace EVP
         }
         // TODO: noch diese dinger hier löschen
 
-        private void ProgramButton_Resize(object sender, EventArgs e)
-        {
-        }
 
-        private void settingsButton_Resize(object sender, EventArgs e)
-        {
-        }
+		private void trainData_Click(object sender, EventArgs e)
+		{
+
+		}
 	}
 }

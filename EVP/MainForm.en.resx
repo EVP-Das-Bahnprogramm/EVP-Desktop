@@ -117,76 +117,78 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="languageBox.Items" xml:space="preserve">
-    <value>Deutsch</value>
-  </data>
-  <data name="languageBox.Items1" xml:space="preserve">
-    <value>Englisch (English)</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="languageBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 37</value>
+  <data name="überToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>239, 24</value>
   </data>
-  <data name="languageBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>237, 24</value>
+  <data name="überToolStripMenuItem.Text" xml:space="preserve">
+    <value>About</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="languageBox.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="programmBeendenToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>239, 24</value>
   </data>
-  <data name="&gt;&gt;languageBox.Name" xml:space="preserve">
-    <value>languageBox</value>
+  <data name="programmBeendenToolStripMenuItem.Text" xml:space="preserve">
+    <value>Close Program</value>
   </data>
-  <data name="&gt;&gt;languageBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="einstellungenToolStripMenuItem.ShortcutKeyDisplayString" xml:space="preserve">
+    <value>CTRL+SHIFT+P</value>
   </data>
-  <data name="&gt;&gt;languageBox.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="einstellungenToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>239, 24</value>
   </data>
-  <data name="&gt;&gt;languageBox.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="einstellungenToolStripMenuItem.Text" xml:space="preserve">
+    <value>Settings</value>
   </data>
-  <data name="Sprache.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="programmToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 24</value>
   </data>
-  <data name="Sprache.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Bahnschrift, 10.2pt</value>
+  <data name="programmToolStripMenuItem.Text" xml:space="preserve">
+    <value>Program</value>
   </data>
-  <data name="Sprache.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 13</value>
+  <data name="bildereintragToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 24</value>
   </data>
-  <data name="Sprache.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 21</value>
+  <data name="bildereintragToolStripMenuItem.Text" xml:space="preserve">
+    <value>Edit</value>
   </data>
-  <data name="Sprache.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="berToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 24</value>
   </data>
-  <data name="Sprache.Text" xml:space="preserve">
-    <value>Sprache</value>
+  <data name="berToolStripMenuItem.Text" xml:space="preserve">
+    <value>Gallery</value>
   </data>
-  <data name="&gt;&gt;Sprache.Name" xml:space="preserve">
-    <value>Sprache</value>
+  <data name="betriebstellenToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 24</value>
   </data>
-  <data name="&gt;&gt;Sprache.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="betriebstellenToolStripMenuItem.Text" xml:space="preserve">
+    <value>Train Stations</value>
   </data>
-  <data name="&gt;&gt;Sprache.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="hilfeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Help</value>
   </data>
-  <data name="&gt;&gt;Sprache.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="menuStrip1.Text" xml:space="preserve">
+    <value>Menu</value>
   </data>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>nl</value>
-  </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 16</value>
+  <data name="photoButton.Text" xml:space="preserve">
+    <value>Gallery</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>261, 450</value>
+  <data name="placesButton.Text" xml:space="preserve">
+    <value>Spots</value>
+  </data>
+  <data name="ProgramButton.Text" xml:space="preserve">
+    <value>Documents</value>
+  </data>
+  <data name="settingsButton.Text" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 17</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>The Railway Program</value>
+  </data>
+  <data name="trainData.Text" xml:space="preserve">
+    <value>Train journeys</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -277,15 +279,12 @@
 </value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>EVP Einstellungen</value>
+    <value>EVP - The Railway Program</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>Settings</value>
+  <data name="programmBeendenToolStripMenuItem.ShortcutKeyDisplayString" xml:space="preserve">
+    <value>ALT+F4</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="MessageError_Text" xml:space="preserve">
-    <value>Wählen sie eine gültige Sprache.</value>
+  <data name="homeButton.Text" xml:space="preserve">
+    <value>Start</value>
   </data>
 </root>

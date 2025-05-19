@@ -28,21 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Settings));
-            this.SuspendLayout();
-            // 
-            // Settings
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(719, 450);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Settings";
-            this.Text = "EVP Einstellungen";
-            this.ResumeLayout(false);
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Settings));
+			this.languageBox = new System.Windows.Forms.ComboBox();
+			this.Sprache = new System.Windows.Forms.Label();
+			this.SuspendLayout();
+			// 
+			// languageBox
+			// 
+			this.languageBox.FormattingEnabled = true;
+			this.languageBox.Items.AddRange(new object[] {
+            resources.GetString("languageBox.Items"),
+            resources.GetString("languageBox.Items1")});
+			resources.ApplyResources(this.languageBox, "languageBox");
+			this.languageBox.Name = "languageBox";
+			this.languageBox.SelectedIndexChanged += new System.EventHandler(this.languageBox_SelectedIndexChanged);
+			// 
+			// Sprache
+			// 
+			resources.ApplyResources(this.Sprache, "Sprache");
+			this.Sprache.Name = "Sprache";
+			// 
+			// Settings
+			// 
+			resources.ApplyResources(this, "$this");
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.Controls.Add(this.Sprache);
+			this.Controls.Add(this.languageBox);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+			this.Name = "Settings";
+			this.Load += new System.EventHandler(this.Settings_Load);
+			this.ResumeLayout(false);
+			this.PerformLayout();
 
         }
 
-        #endregion
-    }
+		#endregion
+
+		private System.Windows.Forms.ComboBox languageBox;
+		private System.Windows.Forms.Label Sprache;
+	}
 }
