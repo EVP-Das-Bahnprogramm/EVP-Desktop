@@ -11,6 +11,7 @@ namespace EVP
 {
     partial class AboutBox : Form
     {
+        int number = 1;
         public AboutBox()
         {
             InitializeComponent();
@@ -111,5 +112,15 @@ namespace EVP
         {
             Hide();
         }
-    }
+
+		private void labelProductName_Click(object sender, EventArgs e)
+		{
+            number += 1;
+            if (number == 5)
+            {
+                MessageBox.Show("Chemnitz Siegmar Strullendorf Versenkt", "Wieso bist du hier?", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                number = 0;
+            }
+		}
+	}
 }
