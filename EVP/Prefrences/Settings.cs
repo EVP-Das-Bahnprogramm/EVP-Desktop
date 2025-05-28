@@ -41,6 +41,8 @@ namespace EVP
 			{
 				MessageBox.Show(resourceManager.GetString("MessageError_Text"), "Fehler", MessageBoxButtons.OK, MessageBoxIcon.Error);
 			}
+			// eier lecken diese scheiße ist kaputt
+			// TODO: das hier irgendwie reparieren
 		}
 
 		private void SetLanguage(string culture)
