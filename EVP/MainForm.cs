@@ -12,6 +12,7 @@ using System.Windows.Forms;
 using EVP.src.subpages;
 using System.Xml;
 using EVP.Suppages;
+using EVP.src;
 
 namespace EVP
 {
@@ -65,7 +66,11 @@ namespace EVP
             auc(SP);
             homeButton.BackColor = SystemColors.ControlLight;
             lastClickedButton = homeButton;
-        }
+			IconHelper iconHelper = new IconHelper();
+			iconHelper.LoadFileIcon(ProgramButton, 001, true, false);
+			iconHelper.LoadFileIcon(settingsButton, 256, true, true);
+			iconHelper.LoadFileIcon(photoButton, 252, true, true);
+		}
 
         private void überToolStripMenuItem_Click(object sender, EventArgs e)
         {

@@ -58,7 +58,6 @@
             // 
             // menuStrip1
             // 
-            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.programmToolStripMenuItem,
@@ -67,59 +66,60 @@
             this.betriebstellenToolStripMenuItem,
             this.zugfahrtenToolStripMenuItem,
             this.hilfeToolStripMenuItem});
+            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Name = "menuStrip1";
             // 
             // programmToolStripMenuItem
             // 
-            resources.ApplyResources(this.programmToolStripMenuItem, "programmToolStripMenuItem");
             this.programmToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.überToolStripMenuItem,
             this.programmBeendenToolStripMenuItem,
             this.einstellungenToolStripMenuItem});
             this.programmToolStripMenuItem.Name = "programmToolStripMenuItem";
+            resources.ApplyResources(this.programmToolStripMenuItem, "programmToolStripMenuItem");
             // 
             // überToolStripMenuItem
             // 
-            resources.ApplyResources(this.überToolStripMenuItem, "überToolStripMenuItem");
             this.überToolStripMenuItem.Name = "überToolStripMenuItem";
+            resources.ApplyResources(this.überToolStripMenuItem, "überToolStripMenuItem");
             this.überToolStripMenuItem.Click += new System.EventHandler(this.überToolStripMenuItem_Click);
             // 
             // programmBeendenToolStripMenuItem
             // 
-            resources.ApplyResources(this.programmBeendenToolStripMenuItem, "programmBeendenToolStripMenuItem");
             this.programmBeendenToolStripMenuItem.Name = "programmBeendenToolStripMenuItem";
+            resources.ApplyResources(this.programmBeendenToolStripMenuItem, "programmBeendenToolStripMenuItem");
             this.programmBeendenToolStripMenuItem.Click += new System.EventHandler(this.programmBeendenToolStripMenuItem_Click);
             // 
             // einstellungenToolStripMenuItem
             // 
-            resources.ApplyResources(this.einstellungenToolStripMenuItem, "einstellungenToolStripMenuItem");
             this.einstellungenToolStripMenuItem.Name = "einstellungenToolStripMenuItem";
+            resources.ApplyResources(this.einstellungenToolStripMenuItem, "einstellungenToolStripMenuItem");
             this.einstellungenToolStripMenuItem.Click += new System.EventHandler(this.einstellungenToolStripMenuItem_Click);
             // 
             // bildereintragToolStripMenuItem
             // 
-            resources.ApplyResources(this.bildereintragToolStripMenuItem, "bildereintragToolStripMenuItem");
             this.bildereintragToolStripMenuItem.Name = "bildereintragToolStripMenuItem";
+            resources.ApplyResources(this.bildereintragToolStripMenuItem, "bildereintragToolStripMenuItem");
             // 
             // berToolStripMenuItem
             // 
-            resources.ApplyResources(this.berToolStripMenuItem, "berToolStripMenuItem");
             this.berToolStripMenuItem.Name = "berToolStripMenuItem";
+            resources.ApplyResources(this.berToolStripMenuItem, "berToolStripMenuItem");
             // 
             // betriebstellenToolStripMenuItem
             // 
-            resources.ApplyResources(this.betriebstellenToolStripMenuItem, "betriebstellenToolStripMenuItem");
             this.betriebstellenToolStripMenuItem.Name = "betriebstellenToolStripMenuItem";
+            resources.ApplyResources(this.betriebstellenToolStripMenuItem, "betriebstellenToolStripMenuItem");
             // 
             // zugfahrtenToolStripMenuItem
             // 
-            resources.ApplyResources(this.zugfahrtenToolStripMenuItem, "zugfahrtenToolStripMenuItem");
             this.zugfahrtenToolStripMenuItem.Name = "zugfahrtenToolStripMenuItem";
+            resources.ApplyResources(this.zugfahrtenToolStripMenuItem, "zugfahrtenToolStripMenuItem");
             // 
             // hilfeToolStripMenuItem
             // 
-            resources.ApplyResources(this.hilfeToolStripMenuItem, "hilfeToolStripMenuItem");
             this.hilfeToolStripMenuItem.Name = "hilfeToolStripMenuItem";
+            resources.ApplyResources(this.hilfeToolStripMenuItem, "hilfeToolStripMenuItem");
             // 
             // homeButton
             // 
@@ -170,16 +170,16 @@
             // 
             // panel2
             // 
-            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.pictureBox1);
+            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
             // 
             // pictureBox1
             // 
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Image = global::EVP.Properties.Resources.Logo;
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
             // 

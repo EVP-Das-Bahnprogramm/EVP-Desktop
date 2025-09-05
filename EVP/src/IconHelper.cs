@@ -6,8 +6,9 @@ using System.IO;
 
 namespace EVP.src {
     public class IconHelper
-    {
-        public static Icon Extract(string filePath, int index, bool largeIcon = true)
+	{   // IMAGERES: https://renenyffenegger.ch/development/Windows/PowerShell/examples/WinAPI/ExtractIconEx/imageres.html
+		// SHELL32: https://renenyffenegger.ch/development/Windows/PowerShell/examples/WinAPI/ExtractIconEx/shell32.html
+		public static Icon Extract(string filePath, int index, bool largeIcon = true)
         {
             if (filePath == null)
                 throw new ArgumentNullException(nameof(filePath));
