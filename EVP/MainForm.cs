@@ -21,9 +21,19 @@ namespace EVP
 
 		private void toolStripButton4_Click(object sender, EventArgs e)
 		{
-			GalleryPage galleryPage = new GalleryPage();
-			galleryPage.MdiParent = this;
-			galleryPage.Show();
+			int openForms = Application.OpenForms.OfType<GalleryPage>().Count();
+			if (openForms > 4)
+			{
+				MessageBox.Show("Zu viele Fenster Offen!", "EVP - Das Bahnprogramm", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
+			}
+			else
+			{
+				GalleryPage galleryPage = new GalleryPage();
+				galleryPage.MdiParent = this;
+				galleryPage.Show();
+				galleryPage.WindowState = FormWindowState.Normal;
+			}
 			
 		}
 
@@ -47,6 +57,37 @@ namespace EVP
 		{
 			AboutBox aboutBox = new AboutBox();
 			aboutBox.ShowDialog();
+		}
+
+		private void InfoBarTimer_Tick(object sender, EventArgs e)
+		{
+			infoLabel.Text = $"Version v{Application.ProductVersion} || {DateTime.Now.ToString("F")}";
+		}
+
+		private void toolStripButton1_Click(object sender, EventArgs e)
+		{
+			int openForms = Application.OpenForms.OfType<pluginsPage>().Count();
+			if (openForms > 4)
+			{
+				MessageBox.Show("Zu viele Fenster Offen!", "EVP - Das Bahnprogramm", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
+			}
+			else
+			{
+				pluginsPage pluginsPage = new pluginsPage();
+				pluginsPage.MdiParent = this;
+				pluginsPage.Show();
+				pluginsPage.WindowState = FormWindowState.Normal;
+			}
+		}
+
+		private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+		{
+			var confirmResult = MessageBox.Show("EVP Schließen?", "EVP Schließvorgang", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+			if (confirmResult == DialogResult.No)
+			{
+				e.Cancel = true;
+			}
 		}
 	}
 }

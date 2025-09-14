@@ -28,25 +28,28 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
 			this.toolStrip1 = new System.Windows.Forms.ToolStrip();
 			this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
+			this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
 			this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
+			this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
 			this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
+			this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
 			this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+			this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
 			this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
+			this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
 			this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+			this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
 			this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
 			this.menuStrip1 = new System.Windows.Forms.MenuStrip();
 			this.eVPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.programmBeendenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.überEVPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-			this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-			this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-			this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-			this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
-			this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
+			this.infoLabel = new System.Windows.Forms.Label();
+			this.InfoBarTimer = new System.Windows.Forms.Timer(this.components);
 			this.toolStrip1.SuspendLayout();
 			this.menuStrip1.SuspendLayout();
 			this.SuspendLayout();
@@ -83,6 +86,11 @@
 			this.toolStripButton5.Size = new System.Drawing.Size(98, 24);
 			this.toolStripButton5.Text = "Startseite";
 			// 
+			// toolStripSeparator1
+			// 
+			this.toolStripSeparator1.Name = "toolStripSeparator1";
+			this.toolStripSeparator1.Size = new System.Drawing.Size(6, 27);
+			// 
 			// toolStripButton4
 			// 
 			this.toolStripButton4.Image = global::EVP.Properties.Resources.EVPGall;
@@ -92,6 +100,11 @@
 			this.toolStripButton4.Text = "Gallerie";
 			this.toolStripButton4.Click += new System.EventHandler(this.toolStripButton4_Click);
 			// 
+			// toolStripSeparator6
+			// 
+			this.toolStripSeparator6.Name = "toolStripSeparator6";
+			this.toolStripSeparator6.Size = new System.Drawing.Size(6, 27);
+			// 
 			// toolStripButton3
 			// 
 			this.toolStripButton3.Image = global::EVP.Properties.Resources.EVPDocs;
@@ -99,6 +112,11 @@
 			this.toolStripButton3.Name = "toolStripButton3";
 			this.toolStripButton3.Size = new System.Drawing.Size(108, 24);
 			this.toolStripButton3.Text = "Dokumente";
+			// 
+			// toolStripSeparator5
+			// 
+			this.toolStripSeparator5.Name = "toolStripSeparator5";
+			this.toolStripSeparator5.Size = new System.Drawing.Size(6, 27);
 			// 
 			// toolStripButton2
 			// 
@@ -108,6 +126,11 @@
 			this.toolStripButton2.Size = new System.Drawing.Size(105, 24);
 			this.toolStripButton2.Text = "Sichtungen";
 			// 
+			// toolStripSeparator4
+			// 
+			this.toolStripSeparator4.Name = "toolStripSeparator4";
+			this.toolStripSeparator4.Size = new System.Drawing.Size(6, 27);
+			// 
 			// toolStripButton6
 			// 
 			this.toolStripButton6.Image = global::EVP.Properties.Resources.EVPPlace_2x;
@@ -116,6 +139,11 @@
 			this.toolStripButton6.Size = new System.Drawing.Size(78, 24);
 			this.toolStripButton6.Text = "Stellen";
 			// 
+			// toolStripSeparator3
+			// 
+			this.toolStripSeparator3.Name = "toolStripSeparator3";
+			this.toolStripSeparator3.Size = new System.Drawing.Size(6, 27);
+			// 
 			// toolStripButton1
 			// 
 			this.toolStripButton1.Image = global::EVP.Properties.Resources.EVPPlugin_2x;
@@ -123,6 +151,12 @@
 			this.toolStripButton1.Name = "toolStripButton1";
 			this.toolStripButton1.Size = new System.Drawing.Size(88, 24);
 			this.toolStripButton1.Text = "Plug-Ins";
+			this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
+			// 
+			// toolStripSeparator2
+			// 
+			this.toolStripSeparator2.Name = "toolStripSeparator2";
+			this.toolStripSeparator2.Size = new System.Drawing.Size(6, 27);
 			// 
 			// toolStripLabel1
 			// 
@@ -165,43 +199,29 @@
 			this.überEVPToolStripMenuItem.Text = "Über EVP";
 			this.überEVPToolStripMenuItem.Click += new System.EventHandler(this.überEVPToolStripMenuItem_Click);
 			// 
-			// toolStripSeparator1
+			// infoLabel
 			// 
-			this.toolStripSeparator1.Name = "toolStripSeparator1";
-			this.toolStripSeparator1.Size = new System.Drawing.Size(6, 27);
+			this.infoLabel.AutoSize = true;
+			this.infoLabel.Dock = System.Windows.Forms.DockStyle.Bottom;
+			this.infoLabel.Font = new System.Drawing.Font("Bahnschrift SemiBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.infoLabel.Location = new System.Drawing.Point(0, 429);
+			this.infoLabel.Name = "infoLabel";
+			this.infoLabel.Size = new System.Drawing.Size(353, 21);
+			this.infoLabel.TabIndex = 5;
+			this.infoLabel.Text = "EVP VERSIONERROR DATEERROR TIMERROR";
 			// 
-			// toolStripSeparator2
+			// InfoBarTimer
 			// 
-			this.toolStripSeparator2.Name = "toolStripSeparator2";
-			this.toolStripSeparator2.Size = new System.Drawing.Size(6, 27);
-			// 
-			// toolStripSeparator3
-			// 
-			this.toolStripSeparator3.Name = "toolStripSeparator3";
-			this.toolStripSeparator3.Size = new System.Drawing.Size(6, 27);
-			// 
-			// toolStripSeparator4
-			// 
-			this.toolStripSeparator4.Name = "toolStripSeparator4";
-			this.toolStripSeparator4.Size = new System.Drawing.Size(6, 27);
-			// 
-			// toolStripSeparator5
-			// 
-			this.toolStripSeparator5.Name = "toolStripSeparator5";
-			this.toolStripSeparator5.Size = new System.Drawing.Size(6, 27);
-			// 
-			// toolStripSeparator6
-			// 
-			this.toolStripSeparator6.Name = "toolStripSeparator6";
-			this.toolStripSeparator6.Size = new System.Drawing.Size(6, 27);
+			this.InfoBarTimer.Tick += new System.EventHandler(this.InfoBarTimer_Tick);
 			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.BackColor = System.Drawing.Color.Black;
+			this.BackColor = System.Drawing.Color.DarkGray;
 			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
 			this.ClientSize = new System.Drawing.Size(800, 450);
+			this.Controls.Add(this.infoLabel);
 			this.Controls.Add(this.toolStrip1);
 			this.Controls.Add(this.menuStrip1);
 			this.DoubleBuffered = true;
@@ -210,6 +230,7 @@
 			this.MainMenuStrip = this.menuStrip1;
 			this.Name = "MainForm";
 			this.Text = "EVP - Das Bahnprogramm";
+			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
 			this.Load += new System.EventHandler(this.MainForm_Load);
 			this.toolStrip1.ResumeLayout(false);
 			this.toolStrip1.PerformLayout();
@@ -240,5 +261,7 @@
 		private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
 		private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
 		private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+		private System.Windows.Forms.Label infoLabel;
+		private System.Windows.Forms.Timer InfoBarTimer;
 	}
 }

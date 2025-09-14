@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace EVP.src.subpages
+namespace EVP.Suppages
 {
-    public partial class programPage : UserControl
-    {
-        public programPage()
-        {
-            InitializeComponent();
-        }
-    }
+	public partial class pluginsPage : Form
+	{
+		public pluginsPage()
+		{
+			InitializeComponent();
+		}
+
+		private void pluginsPage_Load(object sender, EventArgs e)
+		{
+
+		}
+	}
 }
