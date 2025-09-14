@@ -15,7 +15,7 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>C:\Users\Miami\Desktop\</PublishUrl>
+    <PublishUrl>C:\Users\Miami\EVP-Releases\0.0.1.0\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -24,9 +24,10 @@
     <UpdateIntervalUnits>Days</UpdateIntervalUnits>
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
-    <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>1</ApplicationRevision>
-    <ApplicationVersion>0.0.0.%2a</ApplicationVersion>
+    <MapFileExtensions>false</MapFileExtensions>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>0.0.1.0</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
@@ -70,6 +71,66 @@
   <PropertyGroup>
     <SignManifests>true</SignManifests>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM64'">
+    <OutputPath>bin\ARM64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Web.WebView2.Core, Version=1.0.3485.44, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Web.WebView2.1.0.3485.44\lib\net462\Microsoft.Web.WebView2.Core.dll</HintPath>
@@ -79,6 +140,9 @@
     </Reference>
     <Reference Include="Microsoft.Web.WebView2.Wpf, Version=1.0.3485.44, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Web.WebView2.1.0.3485.44\lib\net462\Microsoft.Web.WebView2.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Rop.Winforms.Icons, Version=1.0.26.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Rop.Winforms.Icons.1.0.26\lib\net48\Rop.Winforms.Icons.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -94,17 +158,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Prefrences\AboutBox.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Prefrences\AboutBox.Designer.cs">
-      <DependentUpon>AboutBox.cs</DependentUpon>
-    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prefrences\AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prefrences\AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
     </Compile>
     <Compile Include="Prefrences\Userdata.cs" />
     <Compile Include="Program.cs" />
@@ -128,23 +192,17 @@
       <DependentUpon>Splash.cs</DependentUpon>
     </Compile>
     <Compile Include="src\IconHelper.cs" />
-    <Compile Include="Suppages\browserUI.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="Suppages\GalleryPage.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Suppages\browserUI.Designer.cs">
-      <DependentUpon>browserUI.cs</DependentUpon>
+    <Compile Include="Suppages\GalleryPage.Designer.cs">
+      <DependentUpon>GalleryPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Suppages\gallPage.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="Suppages\HomePage.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Suppages\gallPage.Designer.cs">
-      <DependentUpon>gallPage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Suppages\placesPage.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Suppages\placesPage.Designer.cs">
-      <DependentUpon>placesPage.cs</DependentUpon>
+    <Compile Include="Suppages\HomePage.Designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
     </Compile>
     <Compile Include="Suppages\programPage.cs">
       <SubType>UserControl</SubType>
@@ -152,27 +210,23 @@
     <Compile Include="Suppages\programPage.Designer.cs">
       <DependentUpon>programPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Suppages\startPage.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Suppages\startPage.Designer.cs">
-      <DependentUpon>startPage.cs</DependentUpon>
-    </Compile>
     <Compile Include="Setup\Welcome.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Setup\Welcome.Designer.cs">
       <DependentUpon>Welcome.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="MainForm.en.resx">
+    <Compile Include="Suppages\webBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Suppages\webBrowser.Designer.cs">
+      <DependentUpon>webBrowser.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Prefrences\AboutBox.resx">
       <DependentUpon>AboutBox.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MainForm.resx">
-      <DependentUpon>MainForm.cs</DependentUpon>
-      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Prefrences\Settings.en.resx">
       <DependentUpon>Settings.cs</DependentUpon>
@@ -191,23 +245,17 @@
     <EmbeddedResource Include="Splash\Splash.resx">
       <DependentUpon>Splash.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Suppages\browserUI.resx">
-      <DependentUpon>browserUI.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Suppages\gallPage.resx">
-      <DependentUpon>gallPage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Suppages\placesPage.resx">
-      <DependentUpon>placesPage.cs</DependentUpon>
+    <EmbeddedResource Include="Suppages\HomePage.resx">
+      <DependentUpon>HomePage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Suppages\programPage.resx">
       <DependentUpon>programPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Suppages\startPage.resx">
-      <DependentUpon>startPage.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Setup\Welcome.resx">
       <DependentUpon>Welcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Suppages\webBrowser.resx">
+      <DependentUpon>webBrowser.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -249,6 +297,48 @@
     <None Include="EVPICO.ico" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\EVPSightings%404x.png" />
+    <None Include="Resources\EVPSightings%403x.png" />
+    <None Include="Resources\EVPSightings%402x.png" />
+    <None Include="Resources\EVPSightings%401kpx.png" />
+    <None Include="Resources\EVPSightings.png" />
+    <None Include="Resources\EVPPlugin%404x.png" />
+    <None Include="Resources\EVPPlugin%403x.png" />
+    <None Include="Resources\EVPPlugin%402x.png" />
+    <None Include="Resources\EVPPlugin%401kpx.png" />
+    <None Include="Resources\EVPPlugin.png" />
+    <None Include="Resources\EVPPlace%404x.png" />
+    <None Include="Resources\EVPPlace%403x.png" />
+    <None Include="Resources\EVPPlace%402x.png" />
+    <None Include="Resources\EVPPlace%401kpx.png" />
+    <None Include="Resources\EVPPlace.png" />
+    <None Include="Resources\EVPBrowse.png" />
+    <None Include="Resources\EVPBrowse%401kpx.png" />
+    <None Include="Resources\EVPBrowse%402x.png" />
+    <None Include="Resources\EVPBrowse%403x.png" />
+    <None Include="Resources\EVPBrowse%404x.png" />
+    <None Include="Resources\EVPDocs.png" />
+    <None Include="Resources\EVPDocs%401kpx.png" />
+    <None Include="Resources\EVPDocs%402x.png" />
+    <None Include="Resources\EVPDocs%403x.png" />
+    <None Include="Resources\EVPDocs%404x.png" />
+    <None Include="Resources\EVPGall.png" />
+    <None Include="Resources\EVPGall%401kpx.png" />
+    <None Include="Resources\EVPGall%402x.png" />
+    <None Include="Resources\EVPGall%403x.png" />
+    <None Include="Resources\EVPGall%404x.png" />
+    <None Include="Resources\EVPHome.png" />
+    <None Include="Resources\EVPHome%401kpx.png" />
+    <None Include="Resources\EVPHome%402x.png" />
+    <None Include="Resources\EVPHome%403x.png" />
+    <None Include="Resources\EVPHome%404x.png" />
+    <None Include="Resources\EVP Plugin Full.png" />
+    <None Include="Resources\EVP Plugin Full%402x.png" />
+    <None Include="Resources\EVP Plugin Full%403x.png" />
+    <None Include="Resources\EVP Plugin Icon.png" />
+    <None Include="Resources\EVP Plugin Icon%402x.png" />
+    <None Include="Resources\EVP Plugin Icon%403x.png" />
+    <None Include="Resources\EVP Plugin Icon-1.png" />
     <Content Include="Resources\EVPICO.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

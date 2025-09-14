@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace EVP.Suppages
 {
-    public partial class gallPage : UserControl
-    {
-        public gallPage()
-        {
-            InitializeComponent();
-        }
-    }
+	public partial class GalleryPage : Form
+	{
+		public GalleryPage()
+		{
+			InitializeComponent();
+		}
+	}
 }

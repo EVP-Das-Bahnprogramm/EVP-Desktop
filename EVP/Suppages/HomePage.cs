@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace EVP.src.subpages
+namespace EVP.Suppages
 {
-    public partial class placesPage : UserControl
-    {
-        public placesPage()
-        {
-            InitializeComponent();
-        }
-    }
+	public partial class HomePage : Form
+	{
+		public HomePage()
+		{
+			InitializeComponent();
+		}
+
+		private void HomePage_Load(object sender, EventArgs e)
+		{
+
+		}
+	}
 }

@@ -118,8 +118,8 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="splash" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\splash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="EVPICO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\EVPICO.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -127,7 +127,133 @@
   <data name="AboutSplash" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AboutSplash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="EVPICO" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\EVPICO.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="splash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\splash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EVPBrowse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVPBrowse.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EVPBrowse@1kpx" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVPBrowse@1kpx.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EVPBrowse@2x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVPBrowse@2x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EVPBrowse@3x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVPBrowse@3x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EVPBrowse@4x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVPBrowse@4x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EVPDocs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVPDocs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EVPDocs@1kpx" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVPDocs@1kpx.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EVPDocs@2x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVPDocs@2x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EVPDocs@3x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVPDocs@3x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EVPDocs@4x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVPDocs@4x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EVPGall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVPGall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EVPGall@1kpx" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVPGall@1kpx.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EVPGall@2x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVPGall@2x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EVPGall@3x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVPGall@3x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EVPGall@4x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVPGall@4x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EVPHome" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVPHome.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EVPHome@1kpx" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVPHome@1kpx.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EVPHome@2x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVPHome@2x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EVPHome@3x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVPHome@3x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EVPHome@4x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVPHome@4x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EVPPlace" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVPPlace.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EVPPlace@1kpx" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVPPlace@1kpx.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EVPPlace@2x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVPPlace@2x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EVPPlace@3x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVPPlace@3x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EVPPlace@4x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVPPlace@4x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EVPPlugin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVPPlugin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EVPPlugin@1kpx" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVPPlugin@1kpx.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EVPPlugin@2x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVPPlugin@2x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EVPPlugin@3x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVPPlugin@3x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EVPPlugin@4x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVPPlugin@4x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EVPSightings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVPSightings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EVPSightings@1kpx" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVPSightings@1kpx.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EVPSightings@2x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVPSightings@2x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EVPSightings@3x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVPSightings@3x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EVPSightings@4x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVPSightings@4x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EVP Plugin Full" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVP Plugin Full.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EVP Plugin Full@2x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVP Plugin Full@2x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EVP Plugin Full@3x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVP Plugin Full@3x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EVP Plugin Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVP Plugin Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EVP Plugin Icon@2x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVP Plugin Icon@2x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EVP Plugin Icon@3x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVP Plugin Icon@3x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EVP Plugin Icon-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVP Plugin Icon-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

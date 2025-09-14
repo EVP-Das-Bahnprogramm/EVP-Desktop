@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-  <!--
-    Microsoft ResX Schema
-
+  <!-- 
+    Microsoft ResX Schema 
+    
     Version 2.0
-
-    The primary goals of this format is to allow a simple XML format
-    that is mostly human readable. The generation and parsing of the
-    various data types are done through the TypeConverter classes
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
     associated with the data types.
-
+    
     Example:
-
+    
     ... ado.net/XML headers & schema ...
     <resheader name="resmimetype">text/microsoft-resx</resheader>
     <resheader name="version">2.0</resheader>
@@ -26,36 +26,36 @@
         <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
         <comment>This is a comment</comment>
     </data>
-
-    There are any number of "resheader" rows that contain simple
+                
+    There are any number of "resheader" rows that contain simple 
     name/value pairs.
-
-    Each data row contains a name, and value. The row also contains a
-    type or mimetype. Type corresponds to a .NET class that support
-    text/value conversion through the TypeConverter architecture.
-    Classes that don't support this are serialized and stored with the
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
     mimetype set.
-
-    The mimetype is used for serialized objects, and tells the
-    ResXResourceReader how to depersist the object. This is currently not
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
     extensible. For a given mimetype the value must be set accordingly:
-
-    Note - application/x-microsoft.net.object.binary.base64 is the format
-    that the ResXResourceWriter will generate, however the reader can
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
     read any of the formats listed below.
-
+    
     mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with
+    value   : The object must be serialized with 
             : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
-
+    
     mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with
+    value   : The object must be serialized with 
             : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
             : and then encoded with base64 encoding.
 
     mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array
+    value   : The object must be serialized into a byte array 
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
@@ -117,438 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="toolStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>143, 17</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="überToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>289, 24</value>
-  </data>
-  <data name="überToolStripMenuItem.Text" xml:space="preserve">
-    <value>Über</value>
-  </data>
-  <data name="programmBeendenToolStripMenuItem.ShortcutKeyDisplayString" xml:space="preserve">
-    <value>ALT+F4</value>
-  </data>
-  <data name="programmBeendenToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>289, 24</value>
-  </data>
-  <data name="programmBeendenToolStripMenuItem.Text" xml:space="preserve">
-    <value>Programm Beenden</value>
-  </data>
-  <data name="einstellungenToolStripMenuItem.ShortcutKeyDisplayString" xml:space="preserve">
-    <value>STRG+UMSCH+P</value>
-  </data>
-  <data name="einstellungenToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>289, 24</value>
-  </data>
-  <data name="einstellungenToolStripMenuItem.Text" xml:space="preserve">
-    <value>Einstellungen</value>
-  </data>
-  <data name="programmToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>91, 24</value>
-  </data>
-  <data name="programmToolStripMenuItem.Text" xml:space="preserve">
-    <value>Programm</value>
-  </data>
-  <data name="bildereintragToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>93, 24</value>
-  </data>
-  <data name="bildereintragToolStripMenuItem.Text" xml:space="preserve">
-    <value>Bearbeiten</value>
-  </data>
-  <data name="berToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 24</value>
-  </data>
-  <data name="berToolStripMenuItem.Text" xml:space="preserve">
-    <value>Gallerie</value>
-  </data>
-  <data name="betriebstellenToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 24</value>
-  </data>
-  <data name="betriebstellenToolStripMenuItem.Text" xml:space="preserve">
-    <value>Betriebstellen</value>
-  </data>
-  <data name="zugfahrtenToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>12, 24</value>
-  </data>
-  <data name="hilfeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 24</value>
-  </data>
-  <data name="hilfeToolStripMenuItem.Text" xml:space="preserve">
-    <value>Hilfe</value>
-  </data>
-  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>982, 28</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="menuStrip1.Text" xml:space="preserve">
-    <value>Menü</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
-    <value>menuStrip1</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="homeButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="homeButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Bahnschrift SemiBold Condensed, 13.8pt, style=Bold</value>
-  </data>
-  <data name="homeButton.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="homeButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>271, 3</value>
-  </data>
-  <data name="homeButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 49</value>
-  </data>
-  <data name="homeButton.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="homeButton.Text" xml:space="preserve">
-    <value>Start</value>
-  </data>
-  <data name="homeButton.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;homeButton.Name" xml:space="preserve">
-    <value>homeButton</value>
-  </data>
-  <data name="&gt;&gt;homeButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;homeButton.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;homeButton.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="photoButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="photoButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Bahnschrift SemiBold Condensed, 13.8pt, style=Bold</value>
-  </data>
-  <data name="photoButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="photoButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 49</value>
-  </data>
-  <data name="photoButton.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="photoButton.Text" xml:space="preserve">
-    <value>Gallerie</value>
-  </data>
-  <data name="photoButton.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;photoButton.Name" xml:space="preserve">
-    <value>photoButton</value>
-  </data>
-  <data name="&gt;&gt;photoButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;photoButton.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;photoButton.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="placesButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="placesButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Bahnschrift SemiBold Condensed, 13.8pt, style=Bold</value>
-  </data>
-  <data name="placesButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>137, 3</value>
-  </data>
-  <data name="placesButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 49</value>
-  </data>
-  <data name="placesButton.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="placesButton.Text" xml:space="preserve">
-    <value>Stellen</value>
-  </data>
-  <data name="placesButton.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;placesButton.Name" xml:space="preserve">
-    <value>placesButton</value>
-  </data>
-  <data name="&gt;&gt;placesButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;placesButton.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;placesButton.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="ProgramButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="ProgramButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Bahnschrift SemiBold Condensed, 13.8pt, style=Bold</value>
-  </data>
-  <data name="ProgramButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>405, 3</value>
-  </data>
-  <data name="ProgramButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 49</value>
-  </data>
-  <data name="ProgramButton.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="ProgramButton.Text" xml:space="preserve">
-    <value>Dokumente</value>
-  </data>
-  <data name="ProgramButton.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;ProgramButton.Name" xml:space="preserve">
-    <value>ProgramButton</value>
-  </data>
-  <data name="&gt;&gt;ProgramButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ProgramButton.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;ProgramButton.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="settingsButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="settingsButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Bahnschrift SemiBold Condensed, 13.8pt, style=Bold</value>
-  </data>
-  <data name="settingsButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>673, 3</value>
-  </data>
-  <data name="settingsButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>133, 49</value>
-  </data>
-  <data name="settingsButton.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="settingsButton.Text" xml:space="preserve">
-    <value>Einstellungen</value>
-  </data>
-  <data name="settingsButton.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;settingsButton.Name" xml:space="preserve">
-    <value>settingsButton</value>
-  </data>
-  <data name="&gt;&gt;settingsButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;settingsButton.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;settingsButton.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="label2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Bahnschrift, 7.8pt, style=Bold</value>
-  </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 37</value>
-  </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 17</value>
-  </data>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Das Bahnprogramm</value>
-  </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="mainContainer.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="mainContainer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 92</value>
-  </data>
-  <data name="mainContainer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>958, 489</value>
-  </data>
-  <data name="mainContainer.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;mainContainer.Name" xml:space="preserve">
-    <value>mainContainer</value>
-  </data>
-  <data name="&gt;&gt;mainContainer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;mainContainer.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;mainContainer.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 36</value>
-  </data>
-  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
-    <value>pictureBox1</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 31</value>
-  </data>
-  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 55</value>
-  </data>
-  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="tableLayoutPanel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="trainData.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Bahnschrift SemiBold Condensed, 13.8pt, style=Bold</value>
-  </data>
-  <data name="trainData.Location" type="System.Drawing.Point, System.Drawing">
-    <value>539, 3</value>
-  </data>
-  <data name="trainData.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 49</value>
-  </data>
-  <data name="trainData.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="trainData.Text" xml:space="preserve">
-    <value>Zugfahrten</value>
-  </data>
-  <data name="trainData.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;trainData.Name" xml:space="preserve">
-    <value>trainData</value>
-  </data>
-  <data name="&gt;&gt;trainData.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;trainData.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;trainData.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>161, 31</value>
-  </data>
-  <data name="tableLayoutPanel1.RowCount" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>809, 55</value>
-  </data>
-  <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.Name" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="ProgramButton" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="photoButton" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="homeButton" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="placesButton" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="trainData" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="settingsButton" Row="0" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,16,66667,Percent,16,66667,Percent,16,66667,Percent,16,66667,Percent,16,66667,Percent,16,66667" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>48</value>
-  </metadata>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 16</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>982, 593</value>
-  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAAAAAAAEAIACBEwAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAEAAAABAAgGAAAAXHKoZgAAAAFv
@@ -636,71 +211,5 @@
         AAAAAQAABAAAEAAAQAAAAAEAAAQAABAAAEAAAAABAAAEAAAQAABAAAAAAQAABAAAEAAAQAAAAAEAAAQA
         ABAAAEAAAAABAIB75b8A0O3Dh3c9LX0AAAAASUVORK5CYII=
 </value>
-  </data>
-  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1000, 640</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>EVP - Das Bahnprogramm</value>
-  </data>
-  <data name="&gt;&gt;programmToolStripMenuItem.Name" xml:space="preserve">
-    <value>programmToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;programmToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;überToolStripMenuItem.Name" xml:space="preserve">
-    <value>überToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;überToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;programmBeendenToolStripMenuItem.Name" xml:space="preserve">
-    <value>programmBeendenToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;programmBeendenToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;einstellungenToolStripMenuItem.Name" xml:space="preserve">
-    <value>einstellungenToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;einstellungenToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;bildereintragToolStripMenuItem.Name" xml:space="preserve">
-    <value>bildereintragToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;bildereintragToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;berToolStripMenuItem.Name" xml:space="preserve">
-    <value>berToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;berToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;betriebstellenToolStripMenuItem.Name" xml:space="preserve">
-    <value>betriebstellenToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;betriebstellenToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;zugfahrtenToolStripMenuItem.Name" xml:space="preserve">
-    <value>zugfahrtenToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;zugfahrtenToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;hilfeToolStripMenuItem.Name" xml:space="preserve">
-    <value>hilfeToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;hilfeToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>MainForm</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>
