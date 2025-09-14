@@ -226,6 +226,12 @@
     <Compile Include="Suppages\webBrowser.Designer.cs">
       <DependentUpon>webBrowser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Suppages\webSighting\mainSF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Suppages\webSighting\mainSF.Designer.cs">
+      <DependentUpon>mainSF.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -260,6 +266,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Suppages\webBrowser.resx">
       <DependentUpon>webBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Suppages\webSighting\mainSF.resx">
+      <DependentUpon>mainSF.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

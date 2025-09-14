@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using EVP.Suppages;
+using EVP.Suppages.webSighting;
 using Rop.Winforms;
 
 namespace EVP
@@ -34,7 +35,7 @@ namespace EVP
 				galleryPage.Show();
 				galleryPage.WindowState = FormWindowState.Normal;
 			}
-			
+
 		}
 
 		private void MainForm_Load(object sender, EventArgs e)
@@ -45,7 +46,7 @@ namespace EVP
 			this.WindowState = FormWindowState.Maximized;
 			homePage.WindowState = FormWindowState.Maximized;
 		}
-						  
+
 		private void toolStripLabel1_Click(object sender, EventArgs e)
 		{
 			webBrowser webBrowser = new webBrowser();
@@ -87,6 +88,28 @@ namespace EVP
 			if (confirmResult == DialogResult.No)
 			{
 				e.Cancel = true;
+			}
+			else
+			{
+				Application.ExitThread();
+			}
+		}
+
+		private void toolStripButton2_Click(object sender, EventArgs e)
+		{
+			int openForms = Application.OpenForms.OfType<mainSF>().Count();
+			mainSF webSicht = new mainSF();
+			if (openForms > 0)
+			{
+				MessageBox.Show("Zu viele Fenster Offen!", "EVP - Das Bahnprogramm", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
+			}
+			else
+			{
+				webSicht.MdiParent = this;
+				webSicht.Show();
+				webSicht.WindowState = FormWindowState.Normal;
+
 			}
 		}
 	}
