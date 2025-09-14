@@ -19,7 +19,7 @@ namespace EVP.Suppages
 
 		private void HomePage_Load(object sender, EventArgs e)
 		{
-
+			label1.Text = "Version v" + Application.ProductVersion;
 		}
 	}
 }

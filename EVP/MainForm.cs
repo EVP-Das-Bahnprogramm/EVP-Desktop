@@ -33,13 +33,20 @@ namespace EVP
 			homePage.MdiParent = this;
 			homePage.Show();
 			this.WindowState = FormWindowState.Maximized;
+			homePage.WindowState = FormWindowState.Maximized;
 		}
-
+						  
 		private void toolStripLabel1_Click(object sender, EventArgs e)
 		{
 			webBrowser webBrowser = new webBrowser();
 			webBrowser.MdiParent = this;
 			webBrowser.Show();
+		}
+
+		private void überEVPToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			AboutBox aboutBox = new AboutBox();
+			aboutBox.ShowDialog();
 		}
 	}
 }

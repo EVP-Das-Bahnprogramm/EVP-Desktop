@@ -163,6 +163,7 @@
 			this.überEVPToolStripMenuItem.Name = "überEVPToolStripMenuItem";
 			this.überEVPToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
 			this.überEVPToolStripMenuItem.Text = "Über EVP";
+			this.überEVPToolStripMenuItem.Click += new System.EventHandler(this.überEVPToolStripMenuItem_Click);
 			// 
 			// toolStripSeparator1
 			// 
