@@ -1,0 +1,63 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <RootNamespace>EVP</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <EnableWindowsFormsHighDpiAutoResizing>true</EnableWindowsFormsHighDpiAutoResizing>
+    <DpiAwareness>SystemAware</DpiAwareness>
+    <ForceDesignerDPIUnaware>true</ForceDesignerDPIUnaware>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+
+<ItemGroup>
+  <PackageReference Include="AeroWizard" Version="2.3.1" />
+  <PackageReference Include="MetadataExtractor" Version="2.8.1" />
+  <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+  <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.3485.44" />
+  <PackageReference Include="Rop.Winforms.Icons" Version="1.0.26" />
+  <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+</ItemGroup>
+
+
+ <ItemGroup>
+    <None Include="Resources\EVPSightings%404x.png" />
+    <None Include="Resources\EVPSightings%403x.png" />
+    <None Include="Resources\EVPSightings%402x.png" />
+    <None Include="Resources\EVPSightings%401kpx.png" />
+    <None Include="Resources\EVPPlugin%404x.png" />
+    <None Include="Resources\EVPPlugin%403x.png" />
+    <None Include="Resources\EVPPlugin%402x.png" />
+    <None Include="Resources\EVPPlugin%401kpx.png" />
+    <None Include="Resources\EVPPlace%404x.png" />
+    <None Include="Resources\EVPPlace%403x.png" />
+    <None Include="Resources\EVPPlace%402x.png" />
+    <None Include="Resources\EVPPlace%401kpx.png" />
+    <None Include="Resources\EVPBrowse%401kpx.png" />
+    <None Include="Resources\EVPBrowse%402x.png" />
+    <None Include="Resources\EVPBrowse%403x.png" />
+    <None Include="Resources\EVPBrowse%404x.png" />
+    <None Include="Resources\EVPDocs%401kpx.png" />
+    <None Include="Resources\EVPDocs%402x.png" />
+    <None Include="Resources\EVPDocs%403x.png" />
+    <None Include="Resources\EVPDocs%404x.png" />
+    <None Include="Resources\EVPGall%401kpx.png" />
+    <None Include="Resources\EVPGall%402x.png" />
+    <None Include="Resources\EVPGall%403x.png" />
+    <None Include="Resources\EVPGall%404x.png" />
+    <None Include="Resources\EVPHome%401kpx.png" />
+    <None Include="Resources\EVPHome%402x.png" />
+    <None Include="Resources\EVPHome%403x.png" />
+    <None Include="Resources\EVPHome%404x.png" />
+    <None Include="Resources\EVP Plugin Full%402x.png" />
+    <None Include="Resources\EVP Plugin Full%403x.png" />
+    <None Include="Resources\EVP Plugin Icon%402x.png" />
+    <None Include="Resources\EVP Plugin Icon%403x.png" />
+    <Content Include="Resources\EVPICO.ico" />
+  </ItemGroup>
+
+  
+</Project>
