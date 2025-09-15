@@ -18,6 +18,7 @@
   <PackageReference Include="MetadataExtractor" Version="2.8.1" />
   <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
   <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.3485.44" />
+  <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   <PackageReference Include="Rop.Winforms.Icons" Version="1.0.26" />
   <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
 </ItemGroup>
