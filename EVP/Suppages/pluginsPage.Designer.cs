@@ -32,11 +32,12 @@
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.label1 = new System.Windows.Forms.Label();
 			this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-			this.label2 = new System.Windows.Forms.Label();
-			this.linkLabel1 = new System.Windows.Forms.LinkLabel();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
 			this.groupBox3 = new System.Windows.Forms.GroupBox();
+			this.label2 = new System.Windows.Forms.Label();
+			this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+			this.button1 = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.tableLayoutPanel1.SuspendLayout();
 			this.SuspendLayout();
@@ -80,27 +81,6 @@
 			this.tableLayoutPanel1.Size = new System.Drawing.Size(776, 370);
 			this.tableLayoutPanel1.TabIndex = 3;
 			// 
-			// label2
-			// 
-			this.label2.AutoSize = true;
-			this.label2.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label2.Location = new System.Drawing.Point(287, 41);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(333, 21);
-			this.label2.TabIndex = 4;
-			this.label2.Text = "Um mehr über Plug-Ins zu erfahren, clicke";
-			// 
-			// linkLabel1
-			// 
-			this.linkLabel1.AutoSize = true;
-			this.linkLabel1.Font = new System.Drawing.Font("Bahnschrift", 10.2F);
-			this.linkLabel1.Location = new System.Drawing.Point(613, 41);
-			this.linkLabel1.Name = "linkLabel1";
-			this.linkLabel1.Size = new System.Drawing.Size(42, 21);
-			this.linkLabel1.TabIndex = 5;
-			this.linkLabel1.TabStop = true;
-			this.linkLabel1.Text = "hier.";
-			// 
 			// groupBox1
 			// 
 			this.tableLayoutPanel1.SetColumnSpan(this.groupBox1, 2);
@@ -132,11 +112,42 @@
 			this.groupBox3.TabStop = false;
 			this.groupBox3.Text = "Standart Plug-Ins";
 			// 
+			// label2
+			// 
+			this.label2.AutoSize = true;
+			this.label2.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label2.Location = new System.Drawing.Point(287, 41);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(224, 21);
+			this.label2.TabIndex = 4;
+			this.label2.Text = "Um mehr zu erfahren, clicke";
+			// 
+			// linkLabel1
+			// 
+			this.linkLabel1.AutoSize = true;
+			this.linkLabel1.Font = new System.Drawing.Font("Bahnschrift", 10.2F);
+			this.linkLabel1.Location = new System.Drawing.Point(495, 41);
+			this.linkLabel1.Name = "linkLabel1";
+			this.linkLabel1.Size = new System.Drawing.Size(42, 21);
+			this.linkLabel1.TabIndex = 5;
+			this.linkLabel1.TabStop = true;
+			this.linkLabel1.Text = "hier.";
+			// 
+			// button1
+			// 
+			this.button1.Location = new System.Drawing.Point(681, 12);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(104, 50);
+			this.button1.TabIndex = 6;
+			this.button1.Text = "Plug-In hinzufügen";
+			this.button1.UseVisualStyleBackColor = true;
+			// 
 			// pluginsPage
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(800, 450);
+			this.Controls.Add(this.button1);
 			this.Controls.Add(this.linkLabel1);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.tableLayoutPanel1);
@@ -163,5 +174,6 @@
 		private System.Windows.Forms.GroupBox groupBox1;
 		private System.Windows.Forms.GroupBox groupBox2;
 		private System.Windows.Forms.GroupBox groupBox3;
+		private System.Windows.Forms.Button button1;
 	}
 }
