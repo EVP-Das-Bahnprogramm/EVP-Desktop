@@ -95,9 +95,10 @@
 			// dataGridView1
 			// 
 			dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			dataGridView1.Location = new Point(6, 22);
+			dataGridView1.Dock = DockStyle.Fill;
+			dataGridView1.Location = new Point(3, 19);
 			dataGridView1.Name = "dataGridView1";
-			dataGridView1.Size = new Size(340, 315);
+			dataGridView1.Size = new Size(346, 321);
 			dataGridView1.TabIndex = 2;
 			// 
 			// tableLayoutPanel2
@@ -117,6 +118,7 @@
 			// groupBox1
 			// 
 			groupBox1.Controls.Add(dataGridView1);
+			groupBox1.Dock = DockStyle.Fill;
 			groupBox1.Location = new Point(3, 3);
 			groupBox1.Name = "groupBox1";
 			groupBox1.Size = new Size(352, 343);

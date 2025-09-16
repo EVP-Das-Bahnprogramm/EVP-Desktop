@@ -26,18 +26,13 @@ namespace EVP
 		private static string SavedPlacesPath => Path.Combine(BasePath, "savedplaces.xml");
 		private static string UserPath => Path.Combine(BasePath, "user.xml");
 
-		public static void InitializeStructure()
+		public static void InitializeStructure(string username)
 		{
 			Directory.CreateDirectory(BasePath);
 
 			CreateEmptyXml(SavedDataPath, new List<string>());
 			CreateEmptyXml(SavedPlacesPath, new List<string>());
-			CreateEmptyXml(UserPath, new User { Username = "default" });
-		}
-
-		public static void RepairStructure()
-		{
-			InitializeStructure(); // Safe to re-run
+			CreateEmptyXml(UserPath, new User { Username = username });
 		}
 
 		public static void AddSavedLink(string url)

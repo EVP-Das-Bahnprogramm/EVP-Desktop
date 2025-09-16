@@ -36,6 +36,11 @@
 			label4 = new Label();
 			BRBox = new TextBox();
 			button1 = new Button();
+			noteBox = new TextBox();
+			coachBox = new TextBox();
+			label5 = new Label();
+			label6 = new Label();
+			button2 = new Button();
 			SuspendLayout();
 			// 
 			// throughBox
@@ -109,10 +114,59 @@
 			button1.UseVisualStyleBackColor = true;
 			button1.Click += button1_Click;
 			// 
+			// noteBox
+			// 
+			noteBox.Location = new Point(294, 107);
+			noteBox.Multiline = true;
+			noteBox.Name = "noteBox";
+			noteBox.Size = new Size(275, 67);
+			noteBox.TabIndex = 9;
+			noteBox.TextChanged += textBox1_TextChanged;
+			// 
+			// coachBox
+			// 
+			coachBox.Location = new Point(3, 242);
+			coachBox.Name = "coachBox";
+			coachBox.Size = new Size(275, 23);
+			coachBox.TabIndex = 10;
+			// 
+			// label5
+			// 
+			label5.AutoSize = true;
+			label5.Location = new Point(3, 224);
+			label5.Name = "label5";
+			label5.Size = new Size(84, 15);
+			label5.TabIndex = 11;
+			label5.Text = "Am zug hing...";
+			// 
+			// label6
+			// 
+			label6.AutoSize = true;
+			label6.Location = new Point(294, 89);
+			label6.Name = "label6";
+			label6.Size = new Size(91, 15);
+			label6.TabIndex = 12;
+			label6.Text = "Weitere Notizen";
+			// 
+			// button2
+			// 
+			button2.Location = new Point(3, 344);
+			button2.Name = "button2";
+			button2.Size = new Size(110, 35);
+			button2.TabIndex = 13;
+			button2.Text = "Sichten";
+			button2.UseVisualStyleBackColor = true;
+			button2.Click += button2_Click;
+			// 
 			// addTrain
 			// 
 			AutoScaleDimensions = new SizeF(7F, 15F);
 			AutoScaleMode = AutoScaleMode.Font;
+			Controls.Add(button2);
+			Controls.Add(label6);
+			Controls.Add(label5);
+			Controls.Add(coachBox);
+			Controls.Add(noteBox);
 			Controls.Add(button1);
 			Controls.Add(BRBox);
 			Controls.Add(label4);
@@ -138,5 +192,10 @@
 		private Label label4;
 		private TextBox BRBox;
 		private Button button1;
+		private TextBox noteBox;
+		private TextBox coachBox;
+		private Label label5;
+		private Label label6;
+		private Button button2;
 	}
 }

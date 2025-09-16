@@ -9,7 +9,17 @@
 
 		private void NewProfile_Init(object sender, EventArgs e)
 		{
-			Directory.CreateDirectory(Program.userDataFolderPath);
+			if (string.IsNullOrWhiteSpace(userName.Text))
+			{
+				MessageBox.Show("Bitte geben Sie einen gültigen Benutzernamen ein.", "Ungültiger Benutzername", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+				return;
+			}
+			else
+			{
+				DataManager.InitializeStructure(userName.Text);
+			}
+
+				Directory.CreateDirectory(Program.userDataFolderPath);
 		}
 
 		private void Welcome_FormClosing(object sender, FormClosingEventArgs e)
