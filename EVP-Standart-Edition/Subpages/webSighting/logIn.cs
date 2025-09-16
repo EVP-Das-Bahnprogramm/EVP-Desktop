@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace EVP.Subpages.webSighting
 {
@@ -28,7 +29,7 @@ namespace EVP.Subpages.webSighting
 
 		}
 
-		public event EventHandler<string> OnOtpRequested;
+		public event EventHandler<(string email, string username)> OnOtpRequested;
 
 		private async void LIB_Click(object sender, EventArgs e)
 		{
@@ -44,7 +45,7 @@ namespace EVP.Subpages.webSighting
 			if (response.IsSuccessStatusCode)
 			{
 				MessageBox.Show("OTP wurde an Ihre E-Mail gesendet.", "Erfolg", MessageBoxButtons.OK, MessageBoxIcon.Information);
-				OnOtpRequested?.Invoke(this, email); // Tell mainSF to load OTPCode.cs
+				OnOtpRequested?.Invoke(this, (email, "")); // Tell mainSF to load OTPCode.cs
 			}
 			else
 			{
@@ -106,7 +107,7 @@ namespace EVP.Subpages.webSighting
 			if (otpResponse.IsSuccessStatusCode)
 			{
 				MessageBox.Show("OTP wurde gesendet.", "Erfolg", MessageBoxButtons.OK, MessageBoxIcon.Information);
-				OnOtpRequested?.Invoke(this, email);
+				OnOtpRequested?.Invoke(this, (email, displayName));
 			}
 			else
 			{

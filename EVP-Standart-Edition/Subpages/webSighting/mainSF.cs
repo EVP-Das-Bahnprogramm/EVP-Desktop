@@ -10,15 +10,15 @@ namespace EVP.Suppages.webSighting
 			InitializeComponent();
 		}
 
-		private void LoadControl(UserControl control)
+		public void LoadControl(UserControl control)
 		{
 			panel1.Controls.Clear(); // panelHost ist dein Container
 			control.Dock = DockStyle.Fill;
 			panel1.Controls.Add(control);
 		}
-		private void LoadOtpControl(object sender, string email)
+		private void LoadOtpControl(object sender, (string email, string username) args)
 		{
-			var otp = new OTPCode(email);
+			var otp = new OTPCode(args.email, args.username);
 			otp.OnOtpVerified += HandleOtpVerified;
 			LoadControl(otp);
 		}
@@ -29,10 +29,24 @@ namespace EVP.Suppages.webSighting
 		}
 		private void mainSF_Load(object sender, EventArgs e)
 		{
-			LoadLogin();
+			var user = EVP.DataManager.LoadUser();
+			if (user != null && user.IsWebLinked)
+			{
+				var session = new UserSession
+				{
+					Username = user.Username,
+					Email = user.AccountEmail,
+					AccessToken = user.AuthToken
+				};
 
+				currentSession = session;
+				LoadControl(new homePage(session));
+				return;
+			}
+
+			LoadLogin();
 		}
-		private void LoadLogin()
+		public void LoadLogin()
 		{
 			var login = new logIn();
 			login.OnOtpRequested += LoadOtpControl;

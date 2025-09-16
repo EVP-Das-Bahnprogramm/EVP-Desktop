@@ -1,15 +1,10 @@
 ﻿using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
+using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace EVP.Subpages.webSighting
 {
@@ -17,12 +12,13 @@ namespace EVP.Subpages.webSighting
 	{
 		public event EventHandler<UserSession> OnOtpVerified;
 		private string email;
+		private string usernameFromSignup;
 
-		public OTPCode(string email)
+		public OTPCode(string email, string username)
 		{
 			InitializeComponent();
 			this.email = email;
-
+			this.usernameFromSignup = username;
 		}
 
 		private async void logInOTP_Click(object sender, EventArgs e)
@@ -52,6 +48,26 @@ namespace EVP.Subpages.webSighting
 			dynamic user = JsonConvert.DeserializeObject(userJson);
 
 			string username = user.user_metadata?.username;
+			if (string.IsNullOrWhiteSpace(username))
+			{
+				var patchPayload = new
+				{
+					data = new
+					{
+						username = usernameFromSignup
+					}
+				};
+
+				var patchContent = new StringContent(JsonConvert.SerializeObject(patchPayload), Encoding.UTF8, "application/json");
+				client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
+
+				var patchResponse = await client.PutAsync("https://orjuxnpbfghidsxurqgq.supabase.co/auth/v1/user", patchContent);
+				if (patchResponse.IsSuccessStatusCode)
+				{
+					username = usernameFromSignup;
+				}
+			}
+
 			string emailConfirmed = user.email;
 
 			var userSession = new UserSession
@@ -61,8 +77,17 @@ namespace EVP.Subpages.webSighting
 				AccessToken = accessToken
 			};
 
+			// ✅ Save session for persistent login
+			var userToSave = new EVP.User
+			{
+				Username = username,
+				AccountEmail = emailConfirmed,
+				AuthToken = accessToken
+			};
+
+			EVP.DataManager.SaveUser(userToSave);
+
 			OnOtpVerified?.Invoke(this, userSession);
 		}
-
 	}
 }
