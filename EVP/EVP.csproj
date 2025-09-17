@@ -36,10 +36,6 @@
 
 
  <ItemGroup>
-    <None Include="..\README.md">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
     <None Include="Resources\EVPSightings%404x.png" />
     <None Include="Resources\EVPSightings%403x.png" />
     <None Include="Resources\EVPSightings%402x.png" />

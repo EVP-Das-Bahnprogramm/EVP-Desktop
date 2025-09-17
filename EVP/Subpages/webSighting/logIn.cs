@@ -115,5 +115,9 @@ namespace EVP.Subpages.webSighting
 			}
 		}
 
+		private void label2_Click(object sender, EventArgs e)
+		{
+			MessageBox.Show("Chemnitz Siegmar", "Mirko E.", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+		}
 	}
 }

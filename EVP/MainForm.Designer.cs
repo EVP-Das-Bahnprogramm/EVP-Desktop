@@ -59,9 +59,9 @@
 			toolStrip1.Font = new Font("Bahnschrift SemiBold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
 			toolStrip1.ImageScalingSize = new Size(20, 20);
 			toolStrip1.Items.AddRange(new ToolStripItem[] { toolStripButton5, toolStripSeparator1, toolStripButton4, toolStripSeparator6, toolStripButton3, toolStripSeparator5, toolStripButton2, toolStripSeparator4, toolStripButton6, toolStripSeparator3, toolStripButton1, toolStripSeparator2, toolStripLabel1 });
-			toolStrip1.Location = new Point(0, 28);
+			toolStrip1.Location = new Point(0, 24);
 			toolStrip1.Name = "toolStrip1";
-			toolStrip1.Size = new Size(800, 25);
+			toolStrip1.Size = new Size(700, 25);
 			toolStrip1.TabIndex = 1;
 			toolStrip1.Text = "toolStrip1";
 			// 
@@ -69,7 +69,7 @@
 			// 
 			toolStripButton5.ImageTransparentColor = Color.Magenta;
 			toolStripButton5.Name = "toolStripButton5";
-			toolStripButton5.Size = new Size(78, 22);
+			toolStripButton5.Size = new Size(62, 22);
 			toolStripButton5.Text = "Startseite";
 			// 
 			// toolStripSeparator1
@@ -81,7 +81,7 @@
 			// 
 			toolStripButton4.ImageTransparentColor = Color.Magenta;
 			toolStripButton4.Name = "toolStripButton4";
-			toolStripButton4.Size = new Size(64, 22);
+			toolStripButton4.Size = new Size(51, 22);
 			toolStripButton4.Text = "Gallerie";
 			toolStripButton4.Click += toolStripButton4_Click;
 			// 
@@ -94,7 +94,7 @@
 			// 
 			toolStripButton3.ImageTransparentColor = Color.Magenta;
 			toolStripButton3.Name = "toolStripButton3";
-			toolStripButton3.Size = new Size(88, 22);
+			toolStripButton3.Size = new Size(72, 22);
 			toolStripButton3.Text = "Dokumente";
 			// 
 			// toolStripSeparator5
@@ -106,7 +106,7 @@
 			// 
 			toolStripButton2.ImageTransparentColor = Color.Magenta;
 			toolStripButton2.Name = "toolStripButton2";
-			toolStripButton2.Size = new Size(85, 22);
+			toolStripButton2.Size = new Size(71, 22);
 			toolStripButton2.Text = "Sichtungen";
 			toolStripButton2.Click += toolStripButton2_Click;
 			// 
@@ -119,7 +119,7 @@
 			// 
 			toolStripButton6.ImageTransparentColor = Color.Magenta;
 			toolStripButton6.Name = "toolStripButton6";
-			toolStripButton6.Size = new Size(58, 22);
+			toolStripButton6.Size = new Size(47, 22);
 			toolStripButton6.Text = "Stellen";
 			// 
 			// toolStripSeparator3
@@ -131,7 +131,7 @@
 			// 
 			toolStripButton1.ImageTransparentColor = Color.Magenta;
 			toolStripButton1.Name = "toolStripButton1";
-			toolStripButton1.Size = new Size(68, 22);
+			toolStripButton1.Size = new Size(56, 22);
 			toolStripButton1.Text = "Plug-Ins";
 			toolStripButton1.Click += toolStripButton1_Click;
 			// 
@@ -143,7 +143,7 @@
 			// toolStripLabel1
 			// 
 			toolStripLabel1.Name = "toolStripLabel1";
-			toolStripLabel1.Size = new Size(66, 22);
+			toolStripLabel1.Size = new Size(53, 22);
 			toolStripLabel1.Text = "Browser";
 			toolStripLabel1.Click += toolStripLabel1_Click;
 			// 
@@ -153,7 +153,8 @@
 			menuStrip1.Items.AddRange(new ToolStripItem[] { eVPToolStripMenuItem });
 			menuStrip1.Location = new Point(0, 0);
 			menuStrip1.Name = "menuStrip1";
-			menuStrip1.Size = new Size(800, 28);
+			menuStrip1.Padding = new Padding(5, 2, 0, 2);
+			menuStrip1.Size = new Size(700, 24);
 			menuStrip1.TabIndex = 3;
 			menuStrip1.Text = "menuStrip1";
 			// 
@@ -161,19 +162,19 @@
 			// 
 			eVPToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { programmBeendenToolStripMenuItem, überEVPToolStripMenuItem });
 			eVPToolStripMenuItem.Name = "eVPToolStripMenuItem";
-			eVPToolStripMenuItem.Size = new Size(48, 24);
+			eVPToolStripMenuItem.Size = new Size(39, 20);
 			eVPToolStripMenuItem.Text = "EVP";
 			// 
 			// programmBeendenToolStripMenuItem
 			// 
 			programmBeendenToolStripMenuItem.Name = "programmBeendenToolStripMenuItem";
-			programmBeendenToolStripMenuItem.Size = new Size(224, 26);
+			programmBeendenToolStripMenuItem.Size = new Size(180, 22);
 			programmBeendenToolStripMenuItem.Text = "Programm Beenden";
 			// 
 			// überEVPToolStripMenuItem
 			// 
 			überEVPToolStripMenuItem.Name = "überEVPToolStripMenuItem";
-			überEVPToolStripMenuItem.Size = new Size(224, 26);
+			überEVPToolStripMenuItem.Size = new Size(180, 22);
 			überEVPToolStripMenuItem.Text = "Über EVP";
 			überEVPToolStripMenuItem.Click += überEVPToolStripMenuItem_Click;
 			// 
@@ -182,9 +183,9 @@
 			infoLabel.AutoSize = true;
 			infoLabel.Dock = DockStyle.Bottom;
 			infoLabel.Font = new Font("Bahnschrift SemiBold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-			infoLabel.Location = new Point(0, 541);
+			infoLabel.Location = new Point(0, 405);
 			infoLabel.Name = "infoLabel";
-			infoLabel.Size = new Size(353, 21);
+			infoLabel.Size = new Size(289, 17);
 			infoLabel.TabIndex = 5;
 			infoLabel.Text = "EVP VERSIONERROR DATEERROR TIMERROR";
 			// 
@@ -194,11 +195,11 @@
 			// 
 			// MainForm
 			// 
-			AutoScaleDimensions = new SizeF(8F, 20F);
+			AutoScaleDimensions = new SizeF(7F, 15F);
 			AutoScaleMode = AutoScaleMode.Font;
 			BackColor = Color.DarkGray;
 			BackgroundImageLayout = ImageLayout.Zoom;
-			ClientSize = new Size(800, 562);
+			ClientSize = new Size(700, 422);
 			Controls.Add(infoLabel);
 			Controls.Add(toolStrip1);
 			Controls.Add(menuStrip1);
@@ -206,7 +207,6 @@
 			Icon = (Icon)resources.GetObject("$this.Icon");
 			IsMdiContainer = true;
 			MainMenuStrip = menuStrip1;
-			Margin = new Padding(3, 4, 3, 4);
 			Name = "MainForm";
 			Text = "EVP - Das Bahnprogramm";
 			FormClosing += MainForm_FormClosing;

@@ -47,20 +47,18 @@
 			// progressBar1
 			// 
 			progressBar1.Anchor = AnchorStyles.Bottom;
-			progressBar1.Location = new Point(0, 400);
-			progressBar1.Margin = new Padding(3, 4, 3, 4);
+			progressBar1.Location = new Point(-31, 300);
 			progressBar1.Name = "progressBar1";
-			progressBar1.Size = new Size(800, 25);
+			progressBar1.Size = new Size(700, 19);
 			progressBar1.TabIndex = 0;
 			// 
 			// pictureBox1
 			// 
-			pictureBox1.Anchor = AnchorStyles.Top;
+			pictureBox1.Dock = DockStyle.Fill;
 			pictureBox1.Image = Properties.Resources.splash;
-			pictureBox1.Location = new Point(0, -1);
-			pictureBox1.Margin = new Padding(3, 4, 3, 4);
+			pictureBox1.Location = new Point(0, 0);
 			pictureBox1.Name = "pictureBox1";
-			pictureBox1.Size = new Size(800, 400);
+			pictureBox1.Size = new Size(638, 319);
 			pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
 			pictureBox1.TabIndex = 1;
 			pictureBox1.TabStop = false;
@@ -70,9 +68,9 @@
 			// 
 			label1.AutoSize = true;
 			label1.BackColor = Color.Transparent;
-			label1.Location = new Point(0, 379);
+			label1.Location = new Point(0, 284);
 			label1.Name = "label1";
-			label1.Size = new Size(188, 20);
+			label1.Size = new Size(152, 15);
 			label1.TabIndex = 2;
 			label1.Text = "Einrichtung wird gestartet...";
 			label1.Visible = false;
@@ -83,18 +81,18 @@
 			versionLabel.BackColor = Color.IndianRed;
 			versionLabel.Font = new Font("Bahnschrift SemiBold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
 			versionLabel.ForeColor = SystemColors.ControlLightLight;
-			versionLabel.Location = new Point(26, 162);
+			versionLabel.Location = new Point(22, 128);
 			versionLabel.Name = "versionLabel";
-			versionLabel.Size = new Size(78, 21);
+			versionLabel.Size = new Size(64, 17);
 			versionLabel.TabIndex = 3;
 			versionLabel.Text = "v0.1 Beta";
 			// 
 			// Splash
 			// 
-			AutoScaleDimensions = new SizeF(8F, 20F);
+			AutoScaleDimensions = new SizeF(7F, 15F);
 			AutoScaleMode = AutoScaleMode.Font;
 			BackgroundImageLayout = ImageLayout.Zoom;
-			ClientSize = new Size(800, 425);
+			ClientSize = new Size(638, 319);
 			Controls.Add(versionLabel);
 			Controls.Add(label1);
 			Controls.Add(progressBar1);
@@ -102,7 +100,6 @@
 			DoubleBuffered = true;
 			FormBorderStyle = FormBorderStyle.None;
 			Icon = (Icon)resources.GetObject("$this.Icon");
-			Margin = new Padding(3, 4, 3, 4);
 			MaximizeBox = false;
 			MinimizeBox = false;
 			Name = "Splash";

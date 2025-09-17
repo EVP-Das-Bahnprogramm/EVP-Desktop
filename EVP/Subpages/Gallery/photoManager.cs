@@ -1,4 +1,5 @@
-﻿using MetadataExtractor;
+﻿using EVP;
+using MetadataExtractor;
 using MetadataExtractor.Formats.Exif;
 using System.Xml.Serialization;
 
@@ -45,7 +46,7 @@ public static class EVPDataManager
 		CreateEmptyXml(PluginListPath, new List<string>());
 		CreateEmptyXml(SavedDataPath, new List<string>());
 		CreateEmptyXml(SavedPlacesPath, new List<string>());
-		CreateEmptyXml(UserPath, new User { Username = "default", Language = "de" });
+		CreateEmptyXml(UserPath, new User { Username = "default"});
 	}
 
 	public static void RepairStructure()
