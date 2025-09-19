@@ -1,10 +1,17 @@
-﻿using EVP.Suppages;
+﻿using EVP.Setup;
+using EVP.Suppages;
 using EVP.Suppages.webSighting;
+using Updatum;
 
 namespace EVP
 {
 	public partial class MainForm : Form
 	{
+		internal static readonly UpdatumManager AppUpdater = new("EVP-Das-Bahnprogramm", "EVP-Desktop")
+		{
+			InstallUpdateWindowsInstallerArguments = "/qb" // Displays a basic user interface for MSI package
+		};
+
 		public MainForm()
 		{
 			InitializeComponent();
@@ -100,6 +107,20 @@ namespace EVP
 				webSicht.Show();
 				webSicht.WindowState = FormWindowState.Normal;
 
+			}
+		}
+
+		private async void aufUpdatesÜberprüfenToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			var CheckUpdates = await AppUpdater.CheckForUpdatesAsync();
+			if (CheckUpdates)
+			{
+				UpdateForm updateForm = new UpdateForm();
+				updateForm.ShowDialog();
+			}
+			else
+			{
+				MessageBox.Show("Es sind keine Updates verfügbar.", "EVP - Das Bahnprogramm", MessageBoxButtons.OK, MessageBoxIcon.Information);
 			}
 		}
 	}

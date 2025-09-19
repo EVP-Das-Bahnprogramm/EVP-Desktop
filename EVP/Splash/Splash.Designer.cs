@@ -47,7 +47,7 @@
 			// progressBar1
 			// 
 			progressBar1.Anchor = AnchorStyles.Bottom;
-			progressBar1.Location = new Point(-31, 300);
+			progressBar1.Location = new Point(-28, 300);
 			progressBar1.Name = "progressBar1";
 			progressBar1.Size = new Size(700, 19);
 			progressBar1.TabIndex = 0;

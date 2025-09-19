@@ -46,6 +46,7 @@
 			toolStripLabel1 = new ToolStripLabel();
 			menuStrip1 = new MenuStrip();
 			eVPToolStripMenuItem = new ToolStripMenuItem();
+			aufUpdatesÜberprüfenToolStripMenuItem = new ToolStripMenuItem();
 			programmBeendenToolStripMenuItem = new ToolStripMenuItem();
 			überEVPToolStripMenuItem = new ToolStripMenuItem();
 			infoLabel = new Label();
@@ -160,21 +161,28 @@
 			// 
 			// eVPToolStripMenuItem
 			// 
-			eVPToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { programmBeendenToolStripMenuItem, überEVPToolStripMenuItem });
+			eVPToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { aufUpdatesÜberprüfenToolStripMenuItem, programmBeendenToolStripMenuItem, überEVPToolStripMenuItem });
 			eVPToolStripMenuItem.Name = "eVPToolStripMenuItem";
 			eVPToolStripMenuItem.Size = new Size(39, 20);
 			eVPToolStripMenuItem.Text = "EVP";
 			// 
+			// aufUpdatesÜberprüfenToolStripMenuItem
+			// 
+			aufUpdatesÜberprüfenToolStripMenuItem.Name = "aufUpdatesÜberprüfenToolStripMenuItem";
+			aufUpdatesÜberprüfenToolStripMenuItem.Size = new Size(202, 22);
+			aufUpdatesÜberprüfenToolStripMenuItem.Text = "Auf Updates Überprüfen";
+			aufUpdatesÜberprüfenToolStripMenuItem.Click += aufUpdatesÜberprüfenToolStripMenuItem_Click;
+			// 
 			// programmBeendenToolStripMenuItem
 			// 
 			programmBeendenToolStripMenuItem.Name = "programmBeendenToolStripMenuItem";
-			programmBeendenToolStripMenuItem.Size = new Size(180, 22);
+			programmBeendenToolStripMenuItem.Size = new Size(202, 22);
 			programmBeendenToolStripMenuItem.Text = "Programm Beenden";
 			// 
 			// überEVPToolStripMenuItem
 			// 
 			überEVPToolStripMenuItem.Name = "überEVPToolStripMenuItem";
-			überEVPToolStripMenuItem.Size = new Size(180, 22);
+			überEVPToolStripMenuItem.Size = new Size(202, 22);
 			überEVPToolStripMenuItem.Text = "Über EVP";
 			überEVPToolStripMenuItem.Click += überEVPToolStripMenuItem_Click;
 			// 
@@ -242,5 +250,6 @@
 		private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
 		private System.Windows.Forms.Label infoLabel;
 		private System.Windows.Forms.Timer InfoBarTimer;
+		private ToolStripMenuItem aufUpdatesÜberprüfenToolStripMenuItem;
 	}
 }

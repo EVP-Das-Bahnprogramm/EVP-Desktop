@@ -1,4 +1,6 @@
-﻿namespace EVP
+﻿using Updatum;
+
+namespace EVP
 {
 	internal static class Program
 	{
@@ -14,6 +16,7 @@
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
 			Application.Run(new Splash());
+
 		}
 		public static void CloseProgram()
 		{

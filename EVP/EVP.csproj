@@ -4,7 +4,7 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net9.0-windows</TargetFramework>
     <RootNamespace>EVP</RootNamespace>
-    <Nullable>enable</Nullable>
+    <Nullable>disable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
     <EnableWindowsFormsHighDpiAutoResizing>true</EnableWindowsFormsHighDpiAutoResizing>
@@ -14,10 +14,20 @@
     <PackageIcon>EVP-Icon.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/EVP-Das-Bahnprogramm/EVP-Desktop</RepositoryUrl>
-    <AssemblyVersion>0.1.0.0</AssemblyVersion>
-    <FileVersion>0.1.0.0</FileVersion>
+    <AssemblyVersion>0.1.1.0</AssemblyVersion>
+    <FileVersion>0.1.1.0</FileVersion>
     <StartupObject>EVP.Program</StartupObject>
     <ApplicationIcon>Resources\EVPICO.ico</ApplicationIcon>
+    <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+    <Version>0.1.1</Version>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <GenerateAssemblyInfo>True</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <GenerateAssemblyInfo>True</GenerateAssemblyInfo>
   </PropertyGroup>
 
   <ItemGroup>
@@ -29,9 +39,10 @@
   <PackageReference Include="MetadataExtractor" Version="2.8.1" />
   <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
   <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.3485.44" />
-  <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
   <PackageReference Include="Rop.Winforms.Icons" Version="1.0.26" />
   <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+  <PackageReference Include="Updatum" Version="1.1.6" />
 </ItemGroup>
 
 
