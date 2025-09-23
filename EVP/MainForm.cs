@@ -35,13 +35,19 @@ namespace EVP
 
 		}
 
-		private void MainForm_Load(object sender, EventArgs e)
+		private async void MainForm_Load(object sender, EventArgs e)
 		{
 			HomePage homePage = new HomePage();
 			homePage.MdiParent = this;
 			homePage.Show();
 			this.WindowState = FormWindowState.Maximized;
 			homePage.WindowState = FormWindowState.Maximized;
+			var CheckUpdates = await AppUpdater.CheckForUpdatesAsync();
+			if (CheckUpdates)
+			{
+				UpdateForm updateForm = new UpdateForm();
+				updateForm.ShowDialog();
+			}
 		}
 
 		private void toolStripLabel1_Click(object sender, EventArgs e)
