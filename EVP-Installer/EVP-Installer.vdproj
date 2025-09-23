@@ -15,12 +15,6 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_0756C92C8F174792848B383F80CC99A2"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_38E895DEA4AF4AA6954A3819C99DB559"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -33,7 +27,19 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_B6C408B1750C4E0F97A85C5A50F04F7D"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_C7C896852A764120B1707E15A7C73C65"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_CF6F9C0BC16F41FD8440BD50AE056F16"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -94,6 +100,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
     }
@@ -183,6 +197,26 @@
             "PackageAs" = "3:1"
             "Register" = "3:1"
             "Exclude" = "11:TRUE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_CF6F9C0BC16F41FD8440BD50AE056F16"
+            {
+            "SourcePath" = "8:..\\EVP\\Resources\\EVPICO.ico"
+            "TargetName" = "8:EVPICO.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_11C9713C8AB44ACF983051D00F81AC12"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
@@ -363,6 +397,34 @@
         }
         "Shortcut"
         {
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_08FCD4B37557483C8D8A3A8E3B11C92B"
+            {
+            "Name" = "8:EVP Beta"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:"
+            "Folder" = "8:_0C9312783E6C457EA4C1D7DAD5F15897"
+            "WorkingFolder" = "8:_11C9713C8AB44ACF983051D00F81AC12"
+            "Icon" = "8:_CF6F9C0BC16F41FD8440BD50AE056F16"
+            "Feature" = "8:"
+            }
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_56E3586E59914D1389F1B6EF64D927CB"
+            {
+            "Name" = "8:EVP Beta"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_B6C408B1750C4E0F97A85C5A50F04F7D"
+            "Folder" = "8:_877D68A3F7764ACBAD550AD9A530BD98"
+            "WorkingFolder" = "8:_11C9713C8AB44ACF983051D00F81AC12"
+            "Icon" = "8:_CF6F9C0BC16F41FD8440BD50AE056F16"
+            "Feature" = "8:"
+            }
         }
         "UserInterface"
         {
@@ -767,9 +829,9 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_0756C92C8F174792848B383F80CC99A2"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_B6C408B1750C4E0F97A85C5A50F04F7D"
             {
-            "SourcePath" = "8:..\\EVP\\obj\\Debug\\net9.0-windows\\apphost.exe"
+            "SourcePath" = "8:..\\EVP\\obj\\Release\\net9.0-windows\\apphost.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_11C9713C8AB44ACF983051D00F81AC12"
