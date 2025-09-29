@@ -24,9 +24,11 @@ namespace EVP.Setup
 			InitializeComponent();
 		}
 
-		private void UpdateForm_Load(object sender, EventArgs e)
+		private async void UpdateForm_Load(object sender, EventArgs e)
 		{
+			await AppUpdater.CheckForUpdatesAsync(); // Sicherstellen, dass das Release geladen ist
 			ChangeLog.Text = AppUpdater.GetChangelog();
+			versionLabel.Text = AppUpdater.LatestRelease.Name.ToString();
 		}
 
 		private void CloseButton_Click(object sender, EventArgs e)
@@ -36,17 +38,30 @@ namespace EVP.Setup
 
 		private async void installButton_Click(object sender, EventArgs e)
 		{
-			var downloadedAsset = await AppUpdater.DownloadUpdateAsync();
-
-			if (downloadedAsset == null)
+			try
 			{
-				MessageBox.Show("Das Update konnte nicht heruntergeladen werden. Bitte versuchen Sie es später erneut.", "Fehler", MessageBoxButtons.OK, MessageBoxIcon.Error);
-				return;
-			}
+				await AppUpdater.CheckForUpdatesAsync(); // Sicherstellen, dass das Release geladen ist
 
-			// You can manually handle the installation or call the Install method:
-			// Returns false if the installation failed ortherwise it will never return true as the process will be terminated to complete the installation.
-			await AppUpdater.InstallUpdateAsync(downloadedAsset);
+				var downloadedAsset = await AppUpdater.DownloadUpdateAsync();
+
+				if (downloadedAsset == null)
+				{
+					MessageBox.Show("Das Update konnte nicht heruntergeladen werden. Prüfe die Asset-URL oder GitHub-Tag.", "Fehler", MessageBoxButtons.OK, MessageBoxIcon.Error);
+					return;
+				}
+				// Installation starten
+				var confirm = MessageBox.Show(
+					"um EVP zu Installieren muss EVP neu gestartet werden.",
+					"EVP - Das Bahnprogramm",
+					MessageBoxButtons.OKCancel,
+					MessageBoxIcon.Warning);
+				if (confirm == DialogResult.OK) await AppUpdater.InstallUpdateAsync(downloadedAsset); else return;
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show($"Fehler beim Update: {ex.Message}", "Fehler", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				Console.WriteLine(ex);
+			}
 		}
 	}
 }

@@ -397,20 +397,6 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_08FCD4B37557483C8D8A3A8E3B11C92B"
-            {
-            "Name" = "8:EVP Beta"
-            "Arguments" = "8:"
-            "Description" = "8:"
-            "ShowCmd" = "3:1"
-            "IconIndex" = "3:0"
-            "Transitive" = "11:FALSE"
-            "Target" = "8:"
-            "Folder" = "8:_0C9312783E6C457EA4C1D7DAD5F15897"
-            "WorkingFolder" = "8:_11C9713C8AB44ACF983051D00F81AC12"
-            "Icon" = "8:_CF6F9C0BC16F41FD8440BD50AE056F16"
-            "Feature" = "8:"
-            }
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_56E3586E59914D1389F1B6EF64D927CB"
             {
             "Name" = "8:EVP Beta"
@@ -421,6 +407,20 @@
             "Transitive" = "11:FALSE"
             "Target" = "8:_B6C408B1750C4E0F97A85C5A50F04F7D"
             "Folder" = "8:_877D68A3F7764ACBAD550AD9A530BD98"
+            "WorkingFolder" = "8:_11C9713C8AB44ACF983051D00F81AC12"
+            "Icon" = "8:_CF6F9C0BC16F41FD8440BD50AE056F16"
+            "Feature" = "8:"
+            }
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_C3E8B33C6C2D4C33B7F107010014E54C"
+            {
+            "Name" = "8:EVP Beta"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_B6C408B1750C4E0F97A85C5A50F04F7D"
+            "Folder" = "8:_0C9312783E6C457EA4C1D7DAD5F15897"
             "WorkingFolder" = "8:_11C9713C8AB44ACF983051D00F81AC12"
             "Icon" = "8:_CF6F9C0BC16F41FD8440BD50AE056F16"
             "Feature" = "8:"

@@ -155,7 +155,7 @@
 			versionLabel.Name = "versionLabel";
 			versionLabel.Size = new Size(727, 51);
 			versionLabel.TabIndex = 1;
-			versionLabel.Text = "EVP Version [UNBEKANNT]";
+			versionLabel.Text = "EVP - Das Bahnprogramm: Neues Update";
 			versionLabel.TextAlign = ContentAlignment.MiddleCenter;
 			// 
 			// UpdateForm
