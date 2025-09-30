@@ -9,11 +9,6 @@ namespace EVP
 		{
 			InitializeComponent();
 			this.Text = String.Format("Über {0}", AssemblyTitle);
-			this.labelProductName.Text = AssemblyProduct;
-			this.labelVersion.Text = String.Format("Version {0}", AssemblyVersion);
-			this.labelCopyright.Text = "Erstellt am: " + AssemblyCopyright;
-			this.labelCompanyName.Text = "Erstellt von: " + AssemblyCompany;
-			this.textBoxDescription.Text = AssemblyDescription;
 		}
 
 		#region Assemblyattributaccessoren

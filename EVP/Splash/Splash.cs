@@ -32,7 +32,7 @@
 
 		private void Splash_Load(object sender, EventArgs e)
 		{
-			versionLabel.Text = "v" + Application.ProductVersion + " Beta";
+			versionLabel.Text = "v" + Application.ProductVersion;
 			if (!Directory.Exists(Program.userDataFolderPath))
 			{
 				label1.Visible = true;

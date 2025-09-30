@@ -17,6 +17,9 @@
 			else
 			{
 				DataManager.InitializeStructure(userName.Text);
+				MainForm mf = new MainForm();
+				mf.Show();
+				this.Close();
 			}
 
 				Directory.CreateDirectory(Program.userDataFolderPath);
