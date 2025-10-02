@@ -29,138 +29,137 @@
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(pluginsPage));
-			this.pictureBox1 = new System.Windows.Forms.PictureBox();
-			this.label1 = new System.Windows.Forms.Label();
-			this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-			this.groupBox1 = new System.Windows.Forms.GroupBox();
-			this.groupBox2 = new System.Windows.Forms.GroupBox();
-			this.groupBox3 = new System.Windows.Forms.GroupBox();
-			this.label2 = new System.Windows.Forms.Label();
-			this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-			this.button1 = new System.Windows.Forms.Button();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-			this.tableLayoutPanel1.SuspendLayout();
-			this.SuspendLayout();
+			pictureBox1 = new PictureBox();
+			label1 = new Label();
+			tableLayoutPanel1 = new TableLayoutPanel();
+			groupBox1 = new GroupBox();
+			groupBox2 = new GroupBox();
+			groupBox3 = new GroupBox();
+			label2 = new Label();
+			linkLabel1 = new LinkLabel();
+			button1 = new Button();
+			((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+			tableLayoutPanel1.SuspendLayout();
+			SuspendLayout();
 			// 
 			// pictureBox1
 			// 
-			this.pictureBox1.Image = global::EVP.Properties.Resources.EVP_Plugin_Full;
-			this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(269, 50);
-			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pictureBox1.TabIndex = 0;
-			this.pictureBox1.TabStop = false;
+			pictureBox1.Image = Properties.Resources.EVPPlugin_2x;
+			pictureBox1.Location = new Point(10, 11);
+			pictureBox1.Name = "pictureBox1";
+			pictureBox1.Size = new Size(55, 47);
+			pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+			pictureBox1.TabIndex = 0;
+			pictureBox1.TabStop = false;
 			// 
 			// label1
 			// 
-			this.label1.AutoSize = true;
-			this.label1.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.Location = new System.Drawing.Point(287, 12);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(251, 21);
-			this.label1.TabIndex = 1;
-			this.label1.Text = "Willkommen zur Plug-Ins Seite!";
+			label1.AutoSize = true;
+			label1.Font = new Font("Bahnschrift", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+			label1.Location = new Point(71, 14);
+			label1.Name = "label1";
+			label1.Size = new Size(213, 17);
+			label1.TabIndex = 1;
+			label1.Text = "Willkommen zur Plug-Ins Seite!";
 			// 
 			// tableLayoutPanel1
 			// 
-			this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.tableLayoutPanel1.ColumnCount = 2;
-			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-			this.tableLayoutPanel1.Controls.Add(this.groupBox1, 0, 0);
-			this.tableLayoutPanel1.Controls.Add(this.groupBox2, 0, 1);
-			this.tableLayoutPanel1.Controls.Add(this.groupBox3, 1, 1);
-			this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 68);
-			this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-			this.tableLayoutPanel1.RowCount = 2;
-			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-			this.tableLayoutPanel1.Size = new System.Drawing.Size(776, 370);
-			this.tableLayoutPanel1.TabIndex = 3;
+			tableLayoutPanel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+			tableLayoutPanel1.ColumnCount = 2;
+			tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+			tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+			tableLayoutPanel1.Controls.Add(groupBox1, 0, 0);
+			tableLayoutPanel1.Controls.Add(groupBox2, 0, 1);
+			tableLayoutPanel1.Controls.Add(groupBox3, 1, 1);
+			tableLayoutPanel1.Location = new Point(10, 64);
+			tableLayoutPanel1.Name = "tableLayoutPanel1";
+			tableLayoutPanel1.RowCount = 2;
+			tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+			tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+			tableLayoutPanel1.Size = new Size(679, 347);
+			tableLayoutPanel1.TabIndex = 3;
 			// 
 			// groupBox1
 			// 
-			this.tableLayoutPanel1.SetColumnSpan(this.groupBox1, 2);
-			this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.groupBox1.Location = new System.Drawing.Point(3, 3);
-			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Size = new System.Drawing.Size(770, 179);
-			this.groupBox1.TabIndex = 0;
-			this.groupBox1.TabStop = false;
-			this.groupBox1.Text = "Angepinnt";
+			tableLayoutPanel1.SetColumnSpan(groupBox1, 2);
+			groupBox1.Dock = DockStyle.Fill;
+			groupBox1.Location = new Point(3, 3);
+			groupBox1.Name = "groupBox1";
+			groupBox1.Size = new Size(673, 167);
+			groupBox1.TabIndex = 0;
+			groupBox1.TabStop = false;
+			groupBox1.Text = "Angepinnt";
 			// 
 			// groupBox2
 			// 
-			this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.groupBox2.Location = new System.Drawing.Point(3, 188);
-			this.groupBox2.Name = "groupBox2";
-			this.groupBox2.Size = new System.Drawing.Size(382, 179);
-			this.groupBox2.TabIndex = 1;
-			this.groupBox2.TabStop = false;
-			this.groupBox2.Text = "Installiert";
+			groupBox2.Dock = DockStyle.Fill;
+			groupBox2.Location = new Point(3, 176);
+			groupBox2.Name = "groupBox2";
+			groupBox2.Size = new Size(333, 168);
+			groupBox2.TabIndex = 1;
+			groupBox2.TabStop = false;
+			groupBox2.Text = "Installiert";
 			// 
 			// groupBox3
 			// 
-			this.groupBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.groupBox3.Location = new System.Drawing.Point(391, 188);
-			this.groupBox3.Name = "groupBox3";
-			this.groupBox3.Size = new System.Drawing.Size(382, 179);
-			this.groupBox3.TabIndex = 2;
-			this.groupBox3.TabStop = false;
-			this.groupBox3.Text = "Standart Plug-Ins";
+			groupBox3.Dock = DockStyle.Fill;
+			groupBox3.Location = new Point(342, 176);
+			groupBox3.Name = "groupBox3";
+			groupBox3.Size = new Size(334, 168);
+			groupBox3.TabIndex = 2;
+			groupBox3.TabStop = false;
+			groupBox3.Text = "Standart Plug-Ins";
 			// 
 			// label2
 			// 
-			this.label2.AutoSize = true;
-			this.label2.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label2.Location = new System.Drawing.Point(287, 41);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(224, 21);
-			this.label2.TabIndex = 4;
-			this.label2.Text = "Um mehr zu erfahren, clicke";
+			label2.AutoSize = true;
+			label2.Font = new Font("Bahnschrift", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+			label2.Location = new Point(71, 41);
+			label2.Name = "label2";
+			label2.Size = new Size(189, 17);
+			label2.TabIndex = 4;
+			label2.Text = "Um mehr zu erfahren, clicke";
 			// 
 			// linkLabel1
 			// 
-			this.linkLabel1.AutoSize = true;
-			this.linkLabel1.Font = new System.Drawing.Font("Bahnschrift", 10.2F);
-			this.linkLabel1.Location = new System.Drawing.Point(495, 41);
-			this.linkLabel1.Name = "linkLabel1";
-			this.linkLabel1.Size = new System.Drawing.Size(42, 21);
-			this.linkLabel1.TabIndex = 5;
-			this.linkLabel1.TabStop = true;
-			this.linkLabel1.Text = "hier.";
+			linkLabel1.AutoSize = true;
+			linkLabel1.Font = new Font("Bahnschrift", 10.2F);
+			linkLabel1.Location = new Point(253, 41);
+			linkLabel1.Name = "linkLabel1";
+			linkLabel1.Size = new Size(36, 17);
+			linkLabel1.TabIndex = 5;
+			linkLabel1.TabStop = true;
+			linkLabel1.Text = "hier.";
 			// 
 			// button1
 			// 
-			this.button1.Location = new System.Drawing.Point(681, 12);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(104, 50);
-			this.button1.TabIndex = 6;
-			this.button1.Text = "Plug-In hinzufügen";
-			this.button1.UseVisualStyleBackColor = true;
+			button1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+			button1.Location = new Point(596, 11);
+			button1.Name = "button1";
+			button1.Size = new Size(91, 47);
+			button1.TabIndex = 6;
+			button1.Text = "Plug-In hinzufügen";
+			button1.UseVisualStyleBackColor = true;
 			// 
 			// pluginsPage
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(800, 450);
-			this.Controls.Add(this.button1);
-			this.Controls.Add(this.linkLabel1);
-			this.Controls.Add(this.label2);
-			this.Controls.Add(this.tableLayoutPanel1);
-			this.Controls.Add(this.label1);
-			this.Controls.Add(this.pictureBox1);
-			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-			this.Name = "pluginsPage";
-			this.Text = "EVP Plug-ins";
-			this.Load += new System.EventHandler(this.pluginsPage_Load);
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-			this.tableLayoutPanel1.ResumeLayout(false);
-			this.ResumeLayout(false);
-			this.PerformLayout();
+			AutoScaleDimensions = new SizeF(7F, 15F);
+			AutoScaleMode = AutoScaleMode.Font;
+			ClientSize = new Size(700, 422);
+			Controls.Add(button1);
+			Controls.Add(linkLabel1);
+			Controls.Add(label2);
+			Controls.Add(tableLayoutPanel1);
+			Controls.Add(label1);
+			Controls.Add(pictureBox1);
+			Icon = (Icon)resources.GetObject("$this.Icon");
+			Name = "pluginsPage";
+			Text = "EVP Plug-ins";
+			Load += pluginsPage_Load;
+			((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+			tableLayoutPanel1.ResumeLayout(false);
+			ResumeLayout(false);
+			PerformLayout();
 
 		}
 

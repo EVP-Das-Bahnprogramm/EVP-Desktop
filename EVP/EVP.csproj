@@ -11,13 +11,13 @@
     <DpiAwareness>SystemAware</DpiAwareness>
     <ForceDesignerDPIUnaware>true</ForceDesignerDPIUnaware>
     <ApplicationManifest>app.manifest</ApplicationManifest>
-    <PackageIcon>EVP-Icon.png</PackageIcon>
+    <PackageIcon>EVPHome@1kpx.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/EVP-Das-Bahnprogramm/EVP-Desktop</RepositoryUrl>
     <AssemblyVersion>0.2.0.0</AssemblyVersion>
     <FileVersion>0.2.0.0</FileVersion>
     <StartupObject>EVP.Program</StartupObject>
-    <ApplicationIcon>Resources\EVPICO.ico</ApplicationIcon>
+    <ApplicationIcon>Resources\MainIcon.ico</ApplicationIcon>
     <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
     <ForceDesignerDPIUnaware>false</ForceDesignerDPIUnaware>
     <Version>0.2.0-alpha</Version>
@@ -72,7 +72,10 @@
     <None Include="Resources\EVPGall%402x.png" />
     <None Include="Resources\EVPGall%403x.png" />
     <None Include="Resources\EVPGall%404x.png" />
-    <None Include="Resources\EVPHome%401kpx.png" />
+    <None Include="Resources\EVPHome%401kpx.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
     <None Include="Resources\EVPHome%402x.png" />
     <None Include="Resources\EVPHome%403x.png" />
     <None Include="Resources\EVPHome%404x.png" />
@@ -80,7 +83,7 @@
     <None Include="Resources\EVP Plugin Full%403x.png" />
     <None Include="Resources\EVP Plugin Icon%402x.png" />
     <None Include="Resources\EVP Plugin Icon%403x.png" />
-    <Content Include="Resources\EVPICO.ico" />
+    <Content Include="Resources\MainIcon.ico" />
     <Content Include="stationIndex.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

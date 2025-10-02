@@ -30,10 +30,10 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		RESX_CultureCountyOverrides = en=en-DE
-		RESX_SaveFilesImmediatelyUponChange = False
-		RESX_NeutralResourcesLanguage = de-DE
-		SolutionGuid = {99DFB4BB-E996-4028-A8E2-D37B6D86D8C1}
 		RESX_PrefixTranslations = False
+		SolutionGuid = {99DFB4BB-E996-4028-A8E2-D37B6D86D8C1}
+		RESX_NeutralResourcesLanguage = de-DE
+		RESX_SaveFilesImmediatelyUponChange = False
+		RESX_CultureCountyOverrides = en=en-DE
 	EndGlobalSection
 EndGlobal

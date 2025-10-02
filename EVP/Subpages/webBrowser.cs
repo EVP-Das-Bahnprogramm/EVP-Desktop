@@ -47,5 +47,15 @@ namespace EVP.Suppages
 		{
 			webView21.GoForward();
 		}
+
+		private void searchBox_TextChanged(object sender, EventArgs e)
+		{
+
+		}
+
+		private void webView21_Click(object sender, EventArgs e)
+		{
+
+		}
 	}
 }

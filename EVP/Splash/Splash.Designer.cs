@@ -32,10 +32,8 @@
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Splash));
 			timer1 = new System.Windows.Forms.Timer(components);
 			progressBar1 = new ProgressBar();
-			pictureBox1 = new PictureBox();
 			label1 = new Label();
 			versionLabel = new Label();
-			((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
 			SuspendLayout();
 			// 
 			// timer1
@@ -46,29 +44,18 @@
 			// 
 			// progressBar1
 			// 
-			progressBar1.Anchor = AnchorStyles.Bottom;
-			progressBar1.Location = new Point(-28, 300);
+			progressBar1.Dock = DockStyle.Bottom;
+			progressBar1.Location = new Point(0, 443);
 			progressBar1.Name = "progressBar1";
-			progressBar1.Size = new Size(700, 19);
+			progressBar1.Size = new Size(692, 19);
 			progressBar1.TabIndex = 0;
-			// 
-			// pictureBox1
-			// 
-			pictureBox1.Dock = DockStyle.Fill;
-			pictureBox1.Image = Properties.Resources.splash;
-			pictureBox1.Location = new Point(0, 0);
-			pictureBox1.Name = "pictureBox1";
-			pictureBox1.Size = new Size(638, 319);
-			pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-			pictureBox1.TabIndex = 1;
-			pictureBox1.TabStop = false;
-			pictureBox1.Click += pictureBox1_Click;
 			// 
 			// label1
 			// 
 			label1.AutoSize = true;
 			label1.BackColor = Color.Transparent;
-			label1.Location = new Point(0, 284);
+			label1.ForeColor = SystemColors.Control;
+			label1.Location = new Point(0, 425);
 			label1.Name = "label1";
 			label1.Size = new Size(152, 15);
 			label1.TabIndex = 2;
@@ -78,10 +65,10 @@
 			// versionLabel
 			// 
 			versionLabel.AutoSize = true;
-			versionLabel.BackColor = Color.IndianRed;
+			versionLabel.BackColor = Color.Transparent;
 			versionLabel.Font = new Font("Bahnschrift SemiBold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
 			versionLabel.ForeColor = SystemColors.ControlLightLight;
-			versionLabel.Location = new Point(22, 128);
+			versionLabel.Location = new Point(22, 123);
 			versionLabel.Name = "versionLabel";
 			versionLabel.Size = new Size(64, 17);
 			versionLabel.TabIndex = 3;
@@ -91,12 +78,12 @@
 			// 
 			AutoScaleDimensions = new SizeF(7F, 15F);
 			AutoScaleMode = AutoScaleMode.Font;
+			BackgroundImage = Properties.Resources.splash;
 			BackgroundImageLayout = ImageLayout.Zoom;
-			ClientSize = new Size(638, 319);
+			ClientSize = new Size(692, 462);
 			Controls.Add(versionLabel);
 			Controls.Add(label1);
 			Controls.Add(progressBar1);
-			Controls.Add(pictureBox1);
 			DoubleBuffered = true;
 			FormBorderStyle = FormBorderStyle.None;
 			Icon = (Icon)resources.GetObject("$this.Icon");
@@ -107,7 +94,6 @@
 			StartPosition = FormStartPosition.CenterScreen;
 			Text = "Splash";
 			Load += Splash_Load;
-			((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
 			ResumeLayout(false);
 			PerformLayout();
 
@@ -117,7 +103,6 @@
 
 		private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.ProgressBar progressBar1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label versionLabel;
     }
