@@ -37,7 +37,6 @@ namespace EVP.Subpages.webSighting
 
 			var client = new HttpClient();
 			client.DefaultRequestHeaders.Add("apikey", "sb_publishable_FytYync462o0wIBa9FwB6Q_cluc4r9E");
-
 			var payload = new { email = email };
 			var content = new StringContent(JsonConvert.SerializeObject(payload), Encoding.UTF8, "application/json");
 

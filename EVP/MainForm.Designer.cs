@@ -28,29 +28,23 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
 			toolStrip1 = new ToolStrip();
-			toolStripButton5 = new ToolStripButton();
+			evpHomeBtn = new ToolStripButton();
 			toolStripSeparator1 = new ToolStripSeparator();
-			toolStripButton4 = new ToolStripButton();
-			toolStripSeparator6 = new ToolStripSeparator();
-			toolStripButton3 = new ToolStripButton();
-			toolStripSeparator5 = new ToolStripSeparator();
-			toolStripButton2 = new ToolStripButton();
-			toolStripSeparator4 = new ToolStripSeparator();
-			toolStripButton6 = new ToolStripButton();
+			evpGallBtn = new ToolStripButton();
+			evpSightBtn = new ToolStripButton();
+			evpPlaceBtn = new ToolStripButton();
 			toolStripSeparator3 = new ToolStripSeparator();
-			toolStripButton1 = new ToolStripButton();
-			toolStripSeparator2 = new ToolStripSeparator();
+			evpPluginButton = new ToolStripButton();
+			toolStripSeparator4 = new ToolStripSeparator();
 			toolStripLabel1 = new ToolStripLabel();
 			menuStrip1 = new MenuStrip();
 			eVPToolStripMenuItem = new ToolStripMenuItem();
 			aufUpdatesÜberprüfenToolStripMenuItem = new ToolStripMenuItem();
 			programmBeendenToolStripMenuItem = new ToolStripMenuItem();
 			überEVPToolStripMenuItem = new ToolStripMenuItem();
-			infoLabel = new Label();
-			InfoBarTimer = new System.Windows.Forms.Timer(components);
+			hilfeToolStripMenuItem = new ToolStripMenuItem();
 			toolStrip1.SuspendLayout();
 			menuStrip1.SuspendLayout();
 			SuspendLayout();
@@ -59,99 +53,86 @@
 			// 
 			toolStrip1.Font = new Font("Bahnschrift SemiBold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
 			toolStrip1.ImageScalingSize = new Size(20, 20);
-			toolStrip1.Items.AddRange(new ToolStripItem[] { toolStripButton5, toolStripSeparator1, toolStripButton4, toolStripSeparator6, toolStripButton3, toolStripSeparator5, toolStripButton2, toolStripSeparator4, toolStripButton6, toolStripSeparator3, toolStripButton1, toolStripSeparator2, toolStripLabel1 });
+			toolStrip1.Items.AddRange(new ToolStripItem[] { evpHomeBtn, toolStripSeparator1, evpGallBtn, evpSightBtn, evpPlaceBtn, toolStripSeparator3, evpPluginButton, toolStripSeparator4, toolStripLabel1 });
 			toolStrip1.Location = new Point(0, 24);
 			toolStrip1.Name = "toolStrip1";
-			toolStrip1.Size = new Size(700, 25);
+			toolStrip1.Size = new Size(700, 27);
 			toolStrip1.TabIndex = 1;
 			toolStrip1.Text = "toolStrip1";
 			// 
-			// toolStripButton5
+			// evpHomeBtn
 			// 
-			toolStripButton5.ImageTransparentColor = Color.Magenta;
-			toolStripButton5.Name = "toolStripButton5";
-			toolStripButton5.Size = new Size(62, 22);
-			toolStripButton5.Text = "Startseite";
+			evpHomeBtn.DisplayStyle = ToolStripItemDisplayStyle.Image;
+			evpHomeBtn.Image = Properties.Resources.EVPHome_1kpx;
+			evpHomeBtn.ImageTransparentColor = Color.Magenta;
+			evpHomeBtn.Name = "evpHomeBtn";
+			evpHomeBtn.Size = new Size(24, 24);
+			evpHomeBtn.Text = "Startseite";
 			// 
 			// toolStripSeparator1
 			// 
 			toolStripSeparator1.Name = "toolStripSeparator1";
-			toolStripSeparator1.Size = new Size(6, 25);
+			toolStripSeparator1.Size = new Size(6, 27);
 			// 
-			// toolStripButton4
+			// evpGallBtn
 			// 
-			toolStripButton4.ImageTransparentColor = Color.Magenta;
-			toolStripButton4.Name = "toolStripButton4";
-			toolStripButton4.Size = new Size(51, 22);
-			toolStripButton4.Text = "Gallerie";
-			toolStripButton4.Click += toolStripButton4_Click;
+			evpGallBtn.DisplayStyle = ToolStripItemDisplayStyle.Image;
+			evpGallBtn.Image = Properties.Resources.EVPGall_1kpx;
+			evpGallBtn.ImageTransparentColor = Color.Magenta;
+			evpGallBtn.Name = "evpGallBtn";
+			evpGallBtn.Size = new Size(24, 24);
+			evpGallBtn.Text = "Gallerie";
+			evpGallBtn.Click += toolStripButton4_Click;
 			// 
-			// toolStripSeparator6
+			// evpSightBtn
 			// 
-			toolStripSeparator6.Name = "toolStripSeparator6";
-			toolStripSeparator6.Size = new Size(6, 25);
+			evpSightBtn.DisplayStyle = ToolStripItemDisplayStyle.Image;
+			evpSightBtn.Image = Properties.Resources.EVPSightings_1kpx;
+			evpSightBtn.ImageTransparentColor = Color.Magenta;
+			evpSightBtn.Name = "evpSightBtn";
+			evpSightBtn.Size = new Size(24, 24);
+			evpSightBtn.Text = "Sichtungen";
+			evpSightBtn.Click += toolStripButton2_Click;
 			// 
-			// toolStripButton3
+			// evpPlaceBtn
 			// 
-			toolStripButton3.ImageTransparentColor = Color.Magenta;
-			toolStripButton3.Name = "toolStripButton3";
-			toolStripButton3.Size = new Size(72, 22);
-			toolStripButton3.Text = "Dokumente";
-			// 
-			// toolStripSeparator5
-			// 
-			toolStripSeparator5.Name = "toolStripSeparator5";
-			toolStripSeparator5.Size = new Size(6, 25);
-			// 
-			// toolStripButton2
-			// 
-			toolStripButton2.ImageTransparentColor = Color.Magenta;
-			toolStripButton2.Name = "toolStripButton2";
-			toolStripButton2.Size = new Size(71, 22);
-			toolStripButton2.Text = "Sichtungen";
-			toolStripButton2.Click += toolStripButton2_Click;
-			// 
-			// toolStripSeparator4
-			// 
-			toolStripSeparator4.Name = "toolStripSeparator4";
-			toolStripSeparator4.Size = new Size(6, 25);
-			// 
-			// toolStripButton6
-			// 
-			toolStripButton6.ImageTransparentColor = Color.Magenta;
-			toolStripButton6.Name = "toolStripButton6";
-			toolStripButton6.Size = new Size(47, 22);
-			toolStripButton6.Text = "Stellen";
+			evpPlaceBtn.DisplayStyle = ToolStripItemDisplayStyle.Image;
+			evpPlaceBtn.Image = Properties.Resources.EVPPlace_1kpx;
+			evpPlaceBtn.ImageTransparentColor = Color.Magenta;
+			evpPlaceBtn.Name = "evpPlaceBtn";
+			evpPlaceBtn.Size = new Size(24, 24);
+			evpPlaceBtn.Text = "Stellen";
 			// 
 			// toolStripSeparator3
 			// 
 			toolStripSeparator3.Name = "toolStripSeparator3";
-			toolStripSeparator3.Size = new Size(6, 25);
+			toolStripSeparator3.Size = new Size(6, 27);
 			// 
-			// toolStripButton1
+			// evpPluginButton
 			// 
-			toolStripButton1.ImageTransparentColor = Color.Magenta;
-			toolStripButton1.Name = "toolStripButton1";
-			toolStripButton1.Size = new Size(56, 22);
-			toolStripButton1.Text = "Plug-Ins";
-			toolStripButton1.Click += toolStripButton1_Click;
+			evpPluginButton.Image = Properties.Resources.EVPPlugin_1kpx;
+			evpPluginButton.ImageTransparentColor = Color.Magenta;
+			evpPluginButton.Name = "evpPluginButton";
+			evpPluginButton.Size = new Size(76, 24);
+			evpPluginButton.Text = "Plug-Ins";
+			evpPluginButton.Click += toolStripButton1_Click;
 			// 
-			// toolStripSeparator2
+			// toolStripSeparator4
 			// 
-			toolStripSeparator2.Name = "toolStripSeparator2";
-			toolStripSeparator2.Size = new Size(6, 25);
+			toolStripSeparator4.Name = "toolStripSeparator4";
+			toolStripSeparator4.Size = new Size(6, 27);
 			// 
 			// toolStripLabel1
 			// 
+			toolStripLabel1.Font = new Font("Bahnschrift Light", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
 			toolStripLabel1.Name = "toolStripLabel1";
-			toolStripLabel1.Size = new Size(53, 22);
-			toolStripLabel1.Text = "Browser";
-			toolStripLabel1.Click += toolStripLabel1_Click;
+			toolStripLabel1.Size = new Size(106, 24);
+			toolStripLabel1.Text = "Gepinnte Plug-Ins:";
 			// 
 			// menuStrip1
 			// 
 			menuStrip1.ImageScalingSize = new Size(20, 20);
-			menuStrip1.Items.AddRange(new ToolStripItem[] { eVPToolStripMenuItem });
+			menuStrip1.Items.AddRange(new ToolStripItem[] { eVPToolStripMenuItem, hilfeToolStripMenuItem });
 			menuStrip1.Location = new Point(0, 0);
 			menuStrip1.Name = "menuStrip1";
 			menuStrip1.Padding = new Padding(5, 2, 0, 2);
@@ -186,20 +167,11 @@
 			überEVPToolStripMenuItem.Text = "Über EVP";
 			überEVPToolStripMenuItem.Click += überEVPToolStripMenuItem_Click;
 			// 
-			// infoLabel
+			// hilfeToolStripMenuItem
 			// 
-			infoLabel.AutoSize = true;
-			infoLabel.Dock = DockStyle.Bottom;
-			infoLabel.Font = new Font("Bahnschrift SemiBold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-			infoLabel.Location = new Point(0, 405);
-			infoLabel.Name = "infoLabel";
-			infoLabel.Size = new Size(289, 17);
-			infoLabel.TabIndex = 5;
-			infoLabel.Text = "EVP VERSIONERROR DATEERROR TIMERROR";
-			// 
-			// InfoBarTimer
-			// 
-			InfoBarTimer.Tick += InfoBarTimer_Tick;
+			hilfeToolStripMenuItem.Name = "hilfeToolStripMenuItem";
+			hilfeToolStripMenuItem.Size = new Size(44, 20);
+			hilfeToolStripMenuItem.Text = "Hilfe";
 			// 
 			// MainForm
 			// 
@@ -208,7 +180,6 @@
 			BackColor = Color.DarkGray;
 			BackgroundImageLayout = ImageLayout.Zoom;
 			ClientSize = new Size(700, 422);
-			Controls.Add(infoLabel);
 			Controls.Add(toolStrip1);
 			Controls.Add(menuStrip1);
 			DoubleBuffered = true;
@@ -235,21 +206,16 @@
 		private System.Windows.Forms.ToolStripMenuItem eVPToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem programmBeendenToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem überEVPToolStripMenuItem;
-		private System.Windows.Forms.ToolStripButton toolStripButton1;
-		private System.Windows.Forms.ToolStripButton toolStripButton5;
-		private System.Windows.Forms.ToolStripButton toolStripButton4;
-		private System.Windows.Forms.ToolStripButton toolStripButton3;
-		private System.Windows.Forms.ToolStripButton toolStripButton2;
-		private System.Windows.Forms.ToolStripButton toolStripButton6;
-		private System.Windows.Forms.ToolStripLabel toolStripLabel1;
+		private System.Windows.Forms.ToolStripButton evpPluginButton;
+		private System.Windows.Forms.ToolStripButton evpHomeBtn;
+		private System.Windows.Forms.ToolStripButton evpGallBtn;
+		private System.Windows.Forms.ToolStripButton evpSightBtn;
+		private System.Windows.Forms.ToolStripButton evpPlaceBtn;
 		private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-		private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-		private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
-		private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
-		private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
 		private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
-		private System.Windows.Forms.Label infoLabel;
-		private System.Windows.Forms.Timer InfoBarTimer;
 		private ToolStripMenuItem aufUpdatesÜberprüfenToolStripMenuItem;
+		private ToolStripMenuItem hilfeToolStripMenuItem;
+		private ToolStripLabel toolStripLabel1;
+		private ToolStripSeparator toolStripSeparator4;
 	}
 }

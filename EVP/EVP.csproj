@@ -20,7 +20,7 @@
     <ApplicationIcon>Resources\MainIcon.ico</ApplicationIcon>
     <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
     <ForceDesignerDPIUnaware>false</ForceDesignerDPIUnaware>
-    <Version>0.2.0-alpha</Version>
+    <Version>0.2.0</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

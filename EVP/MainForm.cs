@@ -1,4 +1,5 @@
 ﻿using EVP.Setup;
+using EVP.src;
 using EVP.Suppages;
 using EVP.Suppages.webSighting;
 using Updatum;
@@ -40,7 +41,6 @@ namespace EVP
 			HomePage homePage = new HomePage();
 			homePage.MdiParent = this;
 			homePage.Show();
-			this.WindowState = FormWindowState.Maximized;
 			homePage.WindowState = FormWindowState.Maximized;
 			var CheckUpdates = await AppUpdater.CheckForUpdatesAsync();
 			if (CheckUpdates)
@@ -48,6 +48,12 @@ namespace EVP
 				UpdateForm updateForm = new UpdateForm();
 				updateForm.ShowDialog();
 			}
+			// irgendwann kommt ne option zum wechseln der icons zu windows/evp
+			/* if (true) { 
+				evpGallBtn.Image = IconHelper.Extract("imageres.dll", 016, true).ToBitmap();
+				evpSightBtn.Image = IconHelper.Extract("shell32.dll", 013, true).ToBitmap();
+				evpPlaceBtn.Image = IconHelper.Extract("shell32.dll", 022, true).ToBitmap();
+			} */
 		}
 
 		private void toolStripLabel1_Click(object sender, EventArgs e)
@@ -65,7 +71,6 @@ namespace EVP
 
 		private void InfoBarTimer_Tick(object sender, EventArgs e)
 		{
-			infoLabel.Text = $"Version v{Application.ProductVersion} || {DateTime.Now.ToString("F")}";
 		}
 
 		private void toolStripButton1_Click(object sender, EventArgs e)
