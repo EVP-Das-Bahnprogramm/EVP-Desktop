@@ -2,16 +2,19 @@
 using EVP.src;
 using EVP.Suppages;
 using EVP.Suppages.webSighting;
+using System.Reflection;
 using Updatum;
 
 namespace EVP
 {
+
 	public partial class MainForm : Form
 	{
 		internal static readonly UpdatumManager AppUpdater = new("EVP-Das-Bahnprogramm", "EVP-Desktop")
 		{
 			InstallUpdateWindowsInstallerArguments = "/qb" // Displays a basic user interface for MSI package
 		};
+
 
 		public MainForm()
 		{
@@ -54,6 +57,7 @@ namespace EVP
 				evpSightBtn.Image = IconHelper.Extract("shell32.dll", 013, true).ToBitmap();
 				evpPlaceBtn.Image = IconHelper.Extract("shell32.dll", 022, true).ToBitmap();
 			} */
+			toolStripMenuItem1.Text = $"EVP - Das Bahnprogramm | Version {Assembly.GetExecutingAssembly().GetName().Version}";
 		}
 
 		private void toolStripLabel1_Click(object sender, EventArgs e)
@@ -92,15 +96,8 @@ namespace EVP
 
 		private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
 		{
-			var confirmResult = MessageBox.Show("EVP Schließen?", "EVP Schließvorgang", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-			if (confirmResult == DialogResult.No)
-			{
-				e.Cancel = true;
-			}
-			else
-			{
-				Application.ExitThread();
-			}
+			e.Cancel = true;
+			this.Hide();
 		}
 
 		private void toolStripButton2_Click(object sender, EventArgs e)
@@ -133,6 +130,34 @@ namespace EVP
 			{
 				MessageBox.Show("Es sind keine Updates verfügbar.", "EVP - Das Bahnprogramm", MessageBoxButtons.OK, MessageBoxIcon.Information);
 			}
+		}
+
+		private void contextMenuStrip1_Opening(object sender, System.ComponentModel.CancelEventArgs e)
+		{
+
+		}
+
+		private void eVPSchließenToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			var confirmResult = MessageBox.Show("EVP Schließen?", "EVP Schließvorgang", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+			if (confirmResult == DialogResult.Yes)
+			{
+				SystrayMain.Visible = false;
+				SystrayMain.Dispose(); // important!
+
+				Application.Exit(); // triggers message loop shutdown
+				Environment.Exit(0);
+			}
+			else
+			{
+				return;
+			}
+		}
+
+		private void evpOpen_Click(object sender, EventArgs e)
+		{
+			this.Show();
+			this.Focus();
 		}
 	}
 }

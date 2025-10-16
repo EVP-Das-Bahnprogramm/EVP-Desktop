@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
 			toolStrip1 = new ToolStrip();
 			evpHomeBtn = new ToolStripButton();
@@ -45,8 +46,26 @@
 			programmBeendenToolStripMenuItem = new ToolStripMenuItem();
 			überEVPToolStripMenuItem = new ToolStripMenuItem();
 			hilfeToolStripMenuItem = new ToolStripMenuItem();
+			SystrayMain = new NotifyIcon(components);
+			SystrayStrip = new ContextMenuStrip(components);
+			toolStripMenuItem1 = new ToolStripMenuItem();
+			aufUpdatesÜberprüfenToolStripMenuItem1 = new ToolStripMenuItem();
+			toolStripSeparator2 = new ToolStripSeparator();
+			evpOpen = new ToolStripMenuItem();
+			eVPSchließenToolStripMenuItem = new ToolStripMenuItem();
+			statusStrip1 = new StatusStrip();
+			helpProvider1 = new HelpProvider();
+			benutzerToolStripMenuItem = new ToolStripMenuItem();
+			dateiToolStripMenuItem = new ToolStripMenuItem();
+			bildImportierenToolStripMenuItem = new ToolStripMenuItem();
+			plugInImportierenPLXToolStripMenuItem = new ToolStripMenuItem();
+			accountInfosAnzeigenToolStripMenuItem = new ToolStripMenuItem();
+			benutzerstatistikenToolStripMenuItem = new ToolStripMenuItem();
+			überEVPToolStripMenuItem1 = new ToolStripMenuItem();
+			eVPHilfeToolStripMenuItem = new ToolStripMenuItem();
 			toolStrip1.SuspendLayout();
 			menuStrip1.SuspendLayout();
+			SystrayStrip.SuspendLayout();
 			SuspendLayout();
 			// 
 			// toolStrip1
@@ -132,7 +151,7 @@
 			// menuStrip1
 			// 
 			menuStrip1.ImageScalingSize = new Size(20, 20);
-			menuStrip1.Items.AddRange(new ToolStripItem[] { eVPToolStripMenuItem, hilfeToolStripMenuItem });
+			menuStrip1.Items.AddRange(new ToolStripItem[] { eVPToolStripMenuItem, dateiToolStripMenuItem, benutzerToolStripMenuItem, hilfeToolStripMenuItem });
 			menuStrip1.Location = new Point(0, 0);
 			menuStrip1.Name = "menuStrip1";
 			menuStrip1.Padding = new Padding(5, 2, 0, 2);
@@ -169,9 +188,114 @@
 			// 
 			// hilfeToolStripMenuItem
 			// 
+			hilfeToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { überEVPToolStripMenuItem1, eVPHilfeToolStripMenuItem });
 			hilfeToolStripMenuItem.Name = "hilfeToolStripMenuItem";
 			hilfeToolStripMenuItem.Size = new Size(44, 20);
 			hilfeToolStripMenuItem.Text = "Hilfe";
+			// 
+			// SystrayMain
+			// 
+			SystrayMain.ContextMenuStrip = SystrayStrip;
+			SystrayMain.Icon = (Icon)resources.GetObject("SystrayMain.Icon");
+			SystrayMain.Text = "EVP";
+			SystrayMain.Visible = true;
+			// 
+			// SystrayStrip
+			// 
+			SystrayStrip.Items.AddRange(new ToolStripItem[] { toolStripMenuItem1, aufUpdatesÜberprüfenToolStripMenuItem1, toolStripSeparator2, evpOpen, eVPSchließenToolStripMenuItem });
+			SystrayStrip.Name = "SystrayStrip";
+			SystrayStrip.Size = new Size(203, 98);
+			// 
+			// toolStripMenuItem1
+			// 
+			toolStripMenuItem1.Enabled = false;
+			toolStripMenuItem1.Image = Properties.Resources.EVPHome;
+			toolStripMenuItem1.Name = "toolStripMenuItem1";
+			toolStripMenuItem1.Size = new Size(202, 22);
+			toolStripMenuItem1.Text = "EVP Version Unbekannt";
+			// 
+			// aufUpdatesÜberprüfenToolStripMenuItem1
+			// 
+			aufUpdatesÜberprüfenToolStripMenuItem1.Name = "aufUpdatesÜberprüfenToolStripMenuItem1";
+			aufUpdatesÜberprüfenToolStripMenuItem1.Size = new Size(202, 22);
+			aufUpdatesÜberprüfenToolStripMenuItem1.Text = "Auf Updates Überprüfen";
+			// 
+			// toolStripSeparator2
+			// 
+			toolStripSeparator2.Name = "toolStripSeparator2";
+			toolStripSeparator2.Size = new Size(199, 6);
+			// 
+			// evpOpen
+			// 
+			evpOpen.Name = "evpOpen";
+			evpOpen.Size = new Size(202, 22);
+			evpOpen.Text = "EVP Öffnen";
+			evpOpen.Click += evpOpen_Click;
+			// 
+			// eVPSchließenToolStripMenuItem
+			// 
+			eVPSchließenToolStripMenuItem.Name = "eVPSchließenToolStripMenuItem";
+			eVPSchließenToolStripMenuItem.Size = new Size(202, 22);
+			eVPSchließenToolStripMenuItem.Text = "EVP Schließen";
+			eVPSchließenToolStripMenuItem.Click += eVPSchließenToolStripMenuItem_Click;
+			// 
+			// statusStrip1
+			// 
+			statusStrip1.Location = new Point(0, 400);
+			statusStrip1.Name = "statusStrip1";
+			statusStrip1.Size = new Size(700, 22);
+			statusStrip1.TabIndex = 5;
+			statusStrip1.Text = "statusStrip1";
+			// 
+			// benutzerToolStripMenuItem
+			// 
+			benutzerToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { accountInfosAnzeigenToolStripMenuItem, benutzerstatistikenToolStripMenuItem });
+			benutzerToolStripMenuItem.Name = "benutzerToolStripMenuItem";
+			benutzerToolStripMenuItem.Size = new Size(65, 20);
+			benutzerToolStripMenuItem.Text = "Benutzer";
+			// 
+			// dateiToolStripMenuItem
+			// 
+			dateiToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { bildImportierenToolStripMenuItem, plugInImportierenPLXToolStripMenuItem });
+			dateiToolStripMenuItem.Name = "dateiToolStripMenuItem";
+			dateiToolStripMenuItem.Size = new Size(46, 20);
+			dateiToolStripMenuItem.Text = "Datei";
+			// 
+			// bildImportierenToolStripMenuItem
+			// 
+			bildImportierenToolStripMenuItem.Name = "bildImportierenToolStripMenuItem";
+			bildImportierenToolStripMenuItem.Size = new Size(209, 22);
+			bildImportierenToolStripMenuItem.Text = "Bild Importieren";
+			// 
+			// plugInImportierenPLXToolStripMenuItem
+			// 
+			plugInImportierenPLXToolStripMenuItem.Name = "plugInImportierenPLXToolStripMenuItem";
+			plugInImportierenPLXToolStripMenuItem.Size = new Size(209, 22);
+			plugInImportierenPLXToolStripMenuItem.Text = "Plug-In Importieren (PLX)";
+			// 
+			// accountInfosAnzeigenToolStripMenuItem
+			// 
+			accountInfosAnzeigenToolStripMenuItem.Name = "accountInfosAnzeigenToolStripMenuItem";
+			accountInfosAnzeigenToolStripMenuItem.Size = new Size(202, 22);
+			accountInfosAnzeigenToolStripMenuItem.Text = "Account-Infos Anzeigen";
+			// 
+			// benutzerstatistikenToolStripMenuItem
+			// 
+			benutzerstatistikenToolStripMenuItem.Name = "benutzerstatistikenToolStripMenuItem";
+			benutzerstatistikenToolStripMenuItem.Size = new Size(202, 22);
+			benutzerstatistikenToolStripMenuItem.Text = "Benutzerstatistiken";
+			// 
+			// überEVPToolStripMenuItem1
+			// 
+			überEVPToolStripMenuItem1.Name = "überEVPToolStripMenuItem1";
+			überEVPToolStripMenuItem1.Size = new Size(180, 22);
+			überEVPToolStripMenuItem1.Text = "Über EVP";
+			// 
+			// eVPHilfeToolStripMenuItem
+			// 
+			eVPHilfeToolStripMenuItem.Name = "eVPHilfeToolStripMenuItem";
+			eVPHilfeToolStripMenuItem.Size = new Size(180, 22);
+			eVPHilfeToolStripMenuItem.Text = "EVP Hilfe";
 			// 
 			// MainForm
 			// 
@@ -180,6 +304,7 @@
 			BackColor = Color.DarkGray;
 			BackgroundImageLayout = ImageLayout.Zoom;
 			ClientSize = new Size(700, 422);
+			Controls.Add(statusStrip1);
 			Controls.Add(toolStrip1);
 			Controls.Add(menuStrip1);
 			DoubleBuffered = true;
@@ -194,6 +319,7 @@
 			toolStrip1.PerformLayout();
 			menuStrip1.ResumeLayout(false);
 			menuStrip1.PerformLayout();
+			SystrayStrip.ResumeLayout(false);
 			ResumeLayout(false);
 			PerformLayout();
 
@@ -217,5 +343,22 @@
 		private ToolStripMenuItem hilfeToolStripMenuItem;
 		private ToolStripLabel toolStripLabel1;
 		private ToolStripSeparator toolStripSeparator4;
+		private NotifyIcon SystrayMain;
+		private ContextMenuStrip SystrayStrip;
+		private ToolStripMenuItem toolStripMenuItem1;
+		private ToolStripMenuItem aufUpdatesÜberprüfenToolStripMenuItem1;
+		private ToolStripSeparator toolStripSeparator2;
+		private ToolStripMenuItem evpOpen;
+		private ToolStripMenuItem eVPSchließenToolStripMenuItem;
+		private StatusStrip statusStrip1;
+		private HelpProvider helpProvider1;
+		private ToolStripMenuItem dateiToolStripMenuItem;
+		private ToolStripMenuItem benutzerToolStripMenuItem;
+		private ToolStripMenuItem bildImportierenToolStripMenuItem;
+		private ToolStripMenuItem plugInImportierenPLXToolStripMenuItem;
+		private ToolStripMenuItem accountInfosAnzeigenToolStripMenuItem;
+		private ToolStripMenuItem benutzerstatistikenToolStripMenuItem;
+		private ToolStripMenuItem überEVPToolStripMenuItem1;
+		private ToolStripMenuItem eVPHilfeToolStripMenuItem;
 	}
 }
